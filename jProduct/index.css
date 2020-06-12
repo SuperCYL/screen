@@ -1,0 +1,92 @@
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  #jProjectSwiper .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  #jProjectSwiper .swiper-slide {
+    background:rgba(38,186,241,0.3);
+    border:1px solid rgba(38,186,241,1);
+    /* box-shadow:0px 0px 35px 0px rgba(0,252,255,0.55); */
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    /* transform: scale(0.9); */
+    position: relative;
+    cursor: pointer;
+    /* width:480px; */
+    height:127px;
+    margin:0 auto;
+  }
+  #jProjectSwiper .swiper-slide-active,.swiper-slide-duplicate-active{
+    /* width:480px; */
+    height:127px;
+    background:rgba(38,186,241,0.55);
+    border:1px solid rgba(38,186,241,1);
+  }
+  #jProjectSwiper .swiper-slide .eventName{
+    font-size: 26px;
+    position: absolute;
+    top: 5px;
+    text-align: left;
+    left: 50px;
+    color:#fff;
+    opacity: 0.5;
+  }
+  #jProjectSwiper .swiper-slide-active .eventName{
+    opacity: 100;
+  }
+  #jProjectSwiper .swiper-slide .eventSummary{
+    width: 480px;
+    font-size: 28px;
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    left: 50px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  #jProjectSwiper .swiper-slide .eventTime{
+    position: absolute;
+    font-size: 26px;
+    top: 10px;
+    right: 10px;
+    color:#fff;
+    opacity: 0.5;
+  }
+  #jProjectSwiper .swiper-slide-active .eventTime{
+    opacity: 100;
+  }
+  #jProjectSwiper .swiper-slide .eventCover{
+    width:26px;
+    height:26px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    object-fit: cover;
+  }
