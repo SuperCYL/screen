@@ -84,12 +84,11 @@ module.exports = Event.extend(function Base(container, config) {
     new Swiper('#eventAnalysisSwiper .swiper-container', {
       slidesPerView: 3,
       spaceBetween: 30,
-      // slidesPerGroup:3, //三个一组
-      centeredSlides: true, //
+      centeredSlides: true, 
       direction: 'vertical',
       autoplay: true,
       loop: true,
-      mousewheel:true,
+      // mousewheel:true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
