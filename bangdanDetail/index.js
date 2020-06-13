@@ -1,14 +1,8 @@
 var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
-
-require('./swiper.min.css');
-require('./index.css');
-var Swiper = require('./swiper');
 //var Chart = require('XXX');
-/**
- * swiper
- * */
+
 /**
  * 马良基础类
  */
@@ -33,7 +27,7 @@ module.exports = Event.extend(function Base(container, config) {
     //3.子组件实例化
     //this.chart = new Chart(this.container[0], this.config);
     //4.如果有需要, 更新样式
-    
+    this.updateStyle();
   },
   /**
    * 绘制
@@ -43,69 +37,12 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    //如果有需要的话,更新样式
-    let that = this;
-    var html = `<div id="jProjectSwiper" style="height:100%;"><div class="swiper-container"><div class="swiper-wrapper">`
-      for(var i =0;i<data.length;i++){
-      
-        html+=`<div class="swiper-slide" eventId="${data[i]["contentId"]}">`
-        html+= `<img class="eventCover" src="${data[i]["icon"]}" />`
-
-        if(data[i]["accountName"].length > 10){
-          html+= `<p class="eventName">${data[i]["accountName"].substr(0,10)}...</p>`
-        }else{
-          html+= `<p class="eventName">${data[i]["accountName"]}</p>`
-        }
-        
-        if(data[i]["title"].length >55 ){
-          html+= `<p class="eventSummary">${data[i]["title"].substr(0,55)}...</p>`
-        }else{
-          html+= `<p class="eventSummary">${data[i]["title"]}</p>`
-        }
-        
-        if(data[i]["releaseTime"].indexOf('00:00:00') !== -1){
-          html+= `<p class="eventTime">${data[i]["releaseTime"].substr(0,10)}</p>`
-        }else{
-          html+= `<p class="eventTime">${data[i]["releaseTime"]}</p>`
-        }
-        html+=`</div>`
-      }
-    html+= `</div></div></div>`
-       
-
-    this.container.html(html);
-
-    new Swiper('#jProjectSwiper .swiper-container', {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      // slidesPerGroup:4, //三个一组
-      // centeredSlides: true, //第一个hover
-      direction: 'vertical',
-      autoplay: true,
-      loop: true,
-      mousewheel:true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      on:{
-        slideChangeTransitionStart: function(){
-          var eventId = $("#jProjectSwiper .swiper-slide-active").attr("eventId");
-          for(var i = 0;i<data.length;i++){
-            if(eventId == data[i]["contentId"]){
-              console.log(data[i]["contentId"])
-              that.emit('rollEvent', {item:data[i]});
-            }
-          }
-        },
-      },
-    });
-
-   
+    var cfg = this.mergeConfig(config);
     //更新图表
     //this.chart.render(data, cfg);
+    this.container.html(data[0].value)
+    //如果有需要的话,更新样式
     this.updateStyle();
-    
   },
   /**
    *
@@ -169,9 +106,7 @@ module.exports = Event.extend(function Base(container, config) {
       'font-size': cfg.size + 'px',
       'color': cfg.color || '#fff'
     });
-    
   },
-  
   /**
    * 更新配置
    * !!注意:如果render支持第二个参数options, 那updateOptions不是必须的
