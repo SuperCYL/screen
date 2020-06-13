@@ -50,13 +50,13 @@ module.exports = Event.extend(function Base(container, config) {
     oMeta.content= 'never';
     document.getElementsByTagName('head')[0].appendChild(oMeta);
 
-    console.log(escape2Html(data[0].irContent))
-    let cont = escape2Html(data[0].irContent).replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
+    console.log(escape2Html(data.irContent))
+    let cont = escape2Html(data.irContent).replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
     cont = cont.replace(/>;/g,'>');
     // cont = cont.replace(/(\s|&nbsp;)+/g,'<br />')
     //更新图表
     var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
-    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data[0]["abstractTag"]}</p>`
+    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
     html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`
     html += `</div>`
     //this.chart.render(data, cfg);
