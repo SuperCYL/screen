@@ -50,7 +50,7 @@ module.exports = Event.extend(function Base(container, config) {
     //更新图表
     var html = `<div id="shengDetail">`
     if(data.contentType == 3){
-      html+=`<video width="400" height="900" controls>
+      html+=`<video width="464" height="488" controls>
       <source src="${v[0]}" type="video/mp4">
     </video>`
     }else{
