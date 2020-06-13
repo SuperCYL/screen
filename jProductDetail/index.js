@@ -38,7 +38,7 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    clearInterval(timer);
+    clearInterval(jProductDetailtimer);
     var d = [];
     if(data.content && data.content.indexOf("\\n") !== -1){
       d = data.content.split('\\n');
@@ -121,11 +121,11 @@ module.exports = Event.extend(function Base(container, config) {
 
     var newTop ; 
     //使用定时器
-    var timer = setInterval(function(){
+    var jProductDetailtimer = setInterval(function(){
     //文本是否已经到底部（底部出现在浏览器窗口中）
-      if($('#jProductDetail').height()<900){
+      if($('#jProductDetail').height()<488){
           //清除定时器
-        clearInterval(timer);
+        clearInterval(jProductDetailtimer);
 
     }else{
         //每次在原来的基础上移动
