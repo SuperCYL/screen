@@ -48,7 +48,7 @@ module.exports = Event.extend(function Base(container, config) {
     var html = `<div id="shengSwiper" style="height:100%;"><div class="swiper-container"><div class="swiper-wrapper">`
       for(var i =0;i<data.length;i++){
       
-        html+=`<div class="swiper-slide" eventId="${data[i]["accountId"]}">`
+        html+=`<div class="swiper-slide" eventId="${data[i]["contentId"]}">`
         html+= `<img class="eventCover" src="${data[i]["icon"]}" />`
 
         if(data[i]["accountName"].length > 10){
@@ -92,8 +92,8 @@ module.exports = Event.extend(function Base(container, config) {
         slideChangeTransitionStart: function(){
           var eventId = $("#shengSwiper .swiper-slide-active").attr("eventId");
           for(var i = 0;i<data.length;i++){
-            if(eventId == data[i]["eventId"]){
-              console.log(eventId)
+            if(eventId == data[i]["contentId"]){
+              console.log(data[i]["contentId"])
               that.emit('rollEvent', {item:data[i]});
             }
           }
