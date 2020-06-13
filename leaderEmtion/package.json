@@ -1,13 +1,13 @@
 {
   "name": "@hk-componentPackage/leaderEmotion",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
     "lodash": "4.6.1"
   },
   "datav": {
-    "cn_name": "leaderEmotion",
+    "cn_name": "领导人舆情",
     "icon": "",
     "protocol": 2,
     "type": [
