@@ -88,7 +88,8 @@ module.exports = Event.extend(function Base(container, config) {
       direction: 'vertical',
       autoplay: true,
       loop: true,
-      // mousewheel:true,
+      mousewheel:true,
+      slideToClickedSlide:true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
