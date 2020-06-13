@@ -1,6 +1,6 @@
 {
-  "name": "@namespace/bangdanDetail",
-  "version": "0.0.1",
+  "name": "@hk-componentPackage/bangdanDetail",
+  "version": "0.5.3",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -15,7 +15,7 @@
     ],
     "view": {
       "width": "400",
-      "height": "200",
+      "height": "900",
       "minWidth": "200",
       "minHeight": "100"
     },
@@ -42,11 +42,21 @@
       }
     },
     "api_data": {
-      "source": [
+      "source": 
         {
-          "value": "值"
+          "accountId":"7019558562",
+          "contentType":4,
+          "accountName":"丽水公安",
+          "contentId":"i6837457863464619272",
+          "author":"丽水公安",
+          "title":"雨夜帮助老人遭“拒” ，暖心民警用车灯照亮他的回家路❤️#了不起的守护者",
+          "releaseTime":"2020-06-12 21:48:37",
+          "content":"",
+          "photoUrls":null,
+          "videoUrls":["https://ymr-test.oss-cn-hangzhou.aliyuncs.com/toutiao/16d7b568d4d2bba9cc4466f8a9e58755.mp4"],
+          "isOriginal":1,
+          "authorshipContent":""
         }
-      ]
     }
   }
 }

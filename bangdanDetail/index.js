@@ -2,6 +2,7 @@ var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
 //var Chart = require('XXX');
+require('./index.css');
 
 /**
  * 马良基础类
@@ -37,10 +38,103 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    var cfg = this.mergeConfig(config);
+    clearInterval(bangdanDetailtimer);
+    var d = [];
+    if(data.content && data.content.indexOf("\\n") !== -1){
+      d = data.content.split('\\n');
+    }else{
+      d.push(data.content);
+    }
+    var v = data.videoUrls?data.videoUrls:[];
+    var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    //this.chart.render(data, cfg);
-    this.container.html(data[0].value)
+    var html = `<div id="bangdanDetail">`
+    if(data.contentType == 3){
+      html+=`<video width="400" height="900" controls>
+      <source src="${v[0]}" type="video/mp4">
+    </video>`
+    }else{
+      html+= `<p style="font-size:36px;">${data.title}</p>`
+      html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
+      if(!data.photoUrls && data.content && (!data.videoUrls||data.videoUrls.length==0)){ //内容
+        for(var i =0;i<d.length;i++){
+          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:44px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
+        }
+      }
+  
+      else if(data.photoUrls && data.content && (!data.videoUrls||data.videoUrls.length==0)){ //图片和文字
+        for(var i =0;i<d.length;i++){
+          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
+          if(img[i]){
+            html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
+          }
+        }
+      }
+  
+      else if(!data.photoUrls && !data.content && data.videoUrls.length > 0){ //视频
+        for(var i =0;i<v.length;i++){
+          html+=`<video width="100%" height="300" controls>
+            <source src="${v[i]}" type="video/mp4">
+          </video>`
+        }
+      }
+  
+      else if(!data.photoUrls && data.content && data.videoUrls.length > 0){ //视频和内容
+        for(var i =0;i<d.length;i++){
+          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
+          if(v[i]){
+            html+=`<video width="100%" height="300" controls>
+              <source src="${v[i]}" type="video/mp4">
+            </video>`
+          }
+          
+        }
+      }
+
+      else if(!data.videoUrls && !data.content && data.photoUrls.length > 0){ //只有图片
+        for(var i =0;i<img.length;i++){
+            html+= `<img style="width:100%;height:300px;margin-top:20px;" src="${img[i]}" />`
+        }
+      }
+      else{  //都有
+        for(var i =0;i<v.length;i++){
+          html+=`<video width="100%" height="300" controls>
+            <source src="${v[i]}" type="video/mp4">
+          </video>`
+          if(d[i]){
+            html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
+          }
+         
+          if(img[i]){
+            html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
+          }
+        }
+      }
+
+    }
+    
+
+    html += `</div>`
+    
+    this.container.html(html);
+
+
+    var newTop ; 
+    //使用定时器
+    var bangdanDetailtimer = setInterval(function(){
+    //文本是否已经到底部（底部出现在浏览器窗口中）
+      if($('#bangdanDetail').height()<900){
+          //清除定时器
+        clearInterval(bangdanDetailtimer);
+
+    }else{
+        //每次在原来的基础上移动
+      newTop =  $("#bangdanDetail").scrollTop();
+          $("#bangdanDetail").scrollTop(newTop + 5);
+        }
+    },700);
+
+
     //如果有需要的话,更新样式
     this.updateStyle();
   },
