@@ -46,7 +46,8 @@ html, body {
     transform: scale(1);
   }
   #eventAnalysisSwiper .swiper-slide .eventName{
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: bold;
     position: absolute;
     top: 5px;
     text-align: left;
@@ -57,8 +58,8 @@ html, body {
     opacity: 100;
   }
   #eventAnalysisSwiper .swiper-slide .eventSummary{
-    width: 480px;
-    font-size: 28px;
+    width: 560px;
+    font-size: 26px;
     position: absolute;
     top: 50px;
     text-align: left;
@@ -69,7 +70,7 @@ html, body {
   }
   #eventAnalysisSwiper .swiper-slide .eventTime{
     position: absolute;
-    font-size: 26px;
+    font-size: 24px;
     bottom: 10px;
     left: 180px;
   }

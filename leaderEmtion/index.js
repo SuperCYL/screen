@@ -47,21 +47,16 @@ module.exports = Event.extend(function Base(container, config) {
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1){
-                html+=`<a class="tagcloudItem b01" eventId="${data[i]["eventId"]}" href="#" style="font-size:40px;color:#F74C64">${data[i]["title"]}</a>`
+                html+=`<a class="tagcloudItem b01" eventId="${data[i]["eventId"]}" href="#" style="font-size:56px;color:#F74C64">${data[i]["title"]}</a>`
               }
               else if(data[i]["rankId"] == 2){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:36px;color:#FFA633">${data[i]["title"]}</a>` 
+                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:52px;color:#FFA633">${data[i]["title"]}</a>` 
               }
               else if(data[i]["rankId"] == 3){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:32px;color:#F9C824">${data[i]["title"]}</a>` 
+                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:48px;color:#F9C824">${data[i]["title"]}</a>` 
               }
-              else if(data[i]["rankId"] == 4){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:28px;color:#4FC8FF">${data[i]["title"]}</a>` 
-              }
-              else if(data[i]["rankId"] == 5){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:24px;color:#FFFFFF">${data[i]["title"]}</a>` 
-              }else{
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:24px;color:#FFFFFF">${data[i]["title"]}</a>` 
+              else{
+                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:40px;color:#FFFFFF">${data[i]["title"]}</a>` 
               }
             }
             
