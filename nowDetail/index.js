@@ -38,7 +38,7 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    clearInterval(nowDetailConttimer);
+    window.clearInterval(nowDetailConttimer);
     var d = [];
     if(data.content && data.content.indexOf("\\n") !== -1){
       d = data.content.split('\\n');
@@ -119,7 +119,7 @@ module.exports = Event.extend(function Base(container, config) {
     this.container.html(html);
 
 
-    var newTop ; 
+    var nowDetailContnewTop ; 
     //使用定时器
     var nowDetailConttimer = setInterval(function(){
     //文本是否已经到底部（底部出现在浏览器窗口中）
@@ -129,12 +129,12 @@ module.exports = Event.extend(function Base(container, config) {
 
     }else{
         //每次在原来的基础上移动
-      newTop =  $("#nowDetailCont").scrollTop();
-      $("#nowDetailCont").scrollTop(newTop + 5);
+        nowDetailContnewTop =  $("#nowDetailCont").scrollTop();
+      $("#nowDetailCont").scrollTop(nowDetailContnewTop + 5);
     }
 
         
-    },700);
+    },1000);
 
 
     //如果有需要的话,更新样式
