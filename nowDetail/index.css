@@ -1,8 +1,9 @@
 #nowDetailCont{
-    width:100%;
-    height:100%;
+    width:432px;
+    height:900px;
     overflow-y:auto;
     overflow-x:hidden;
+    position: relative;
 }
 #nowDetailCont::-webkit-scrollbar {
     display: none;

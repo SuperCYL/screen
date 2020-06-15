@@ -50,7 +50,7 @@ module.exports = Event.extend(function Base(container, config) {
     //更新图表
     var html = `<div id="nowDetailCont">`
     if(data.contentType == 3){
-      html+=`<video width="400" height="1100" controls>
+      html+=`<video width="432" height="900" controls="controls" autoplay="autoplay">
       <source src="${v[0]}" type="video/mp4">
     </video>`
     }else{
@@ -123,15 +123,17 @@ module.exports = Event.extend(function Base(container, config) {
     //使用定时器
     var nowDetailConttimer = setInterval(function(){
     //文本是否已经到底部（底部出现在浏览器窗口中）
-      if($('#nowDetailCont').height()<600){
+      if($('#nowDetailCont').height()<890){
           //清除定时器
         clearInterval(nowDetailConttimer);
 
     }else{
         //每次在原来的基础上移动
       newTop =  $("#nowDetailCont").scrollTop();
-          $("#nowDetailCont").scrollTop(newTop + 5);
-        }
+      $("#nowDetailCont").scrollTop(newTop + 5);
+    }
+
+        
     },700);
 
 
