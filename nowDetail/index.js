@@ -38,7 +38,7 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    clearInterval(shengDetailtimer);
+    clearInterval(nowDetailConttimer);
     var d = [];
     if(data.content && data.content.indexOf("\\n") !== -1){
       d = data.content.split('\\n');
@@ -48,9 +48,9 @@ module.exports = Event.extend(function Base(container, config) {
     var v = data.videoUrls?data.videoUrls:[];
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="shengDetail">`
+    var html = `<div id="nowDetailCont">`
     if(data.contentType == 3){
-      html+=`<video width="464" height="488" controls>
+      html+=`<video width="400" height="1100" controls>
       <source src="${v[0]}" type="video/mp4">
     </video>`
     }else{
@@ -121,18 +121,18 @@ module.exports = Event.extend(function Base(container, config) {
 
     var newTop ; 
     //使用定时器
-    var shengDetailtimer = setInterval(function(){
+    var nowDetailConttimer = setInterval(function(){
     //文本是否已经到底部（底部出现在浏览器窗口中）
-      if($('#shengDetail').height()<488){
+      if($('#nowDetailCont').height()<600){
           //清除定时器
-        clearInterval(shengDetailtimer);
+        clearInterval(nowDetailConttimer);
 
     }else{
         //每次在原来的基础上移动
-      newTop =  $("#shengDetail").scrollTop();
-          $("#shengDetail").scrollTop(newTop + 5);
+      newTop =  $("#nowDetailCont").scrollTop();
+          $("#nowDetailCont").scrollTop(newTop + 5);
         }
-    },800);
+    },700);
 
 
     //如果有需要的话,更新样式

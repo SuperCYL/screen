@@ -1,0 +1,62 @@
+{
+  "name": "@hk-componentPackage/nowDetail",
+  "version": "0.0.4",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "实时详情",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "400",
+      "height": "1100",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "api_data": {
+      "source": 
+        {
+          "accountId":"gh_bd87f2300341",
+          "contentType":1,
+          "accountName":"杭州司法",
+          "contentId":"4fbfdefe6ced6e5058fdf9c0fe9530f7",
+          "author":"杭州司法",
+          "title":"【微普法】“三好男人”为养家卖烟，浑然不知“牢狱之灾”已临近……",
+          "releaseTime":"2020-06-11 14:48:00",
+          "content":"杭州富阳某小区居民张某（化名）是周围邻居之间公认的“三好男人”，在家中对妻子宠爱有加，对儿女教育有方，对朋友邻里真诚友善，对工作尽职尽守。虽然家庭经济并不宽裕，却也过着有滋有味的生活。然而近日，邻居们发现张某已不见多日，路上碰到张某妻子王丽（化名），她也只是无声流泪，大家看着王丽日渐憔悴的面容，更加好奇这户人家到底出了什么事？张某到哪里去了呢？案情回顾普法时刻贩卖假烟是否属于违法犯罪？触犯的是什么罪名？《中华人民共和国刑法》第一百四十条规定的生产、销售伪劣产品罪，指生产者、销售者故意在产品中掺杂、掺假，以假充真，以次充好或者以不合格产品冒充合格产品，销售金额5万元以上的行为。第二百二十五条规定的非法经营罪，指未经许可经营专营、专卖物品或其他限制买卖的物品，买卖进出口许可证、进出口原产地证明以及其他法律、行政法规规定的经营许可证或者批准文件，以及从事其他非法经营活动，扰乱市场秩序，情节严重的行为。本案中，张某在未取得烟草专卖许可的情况下贩卖品质低劣的香烟，其行为既符合销售伪劣产品罪的犯罪构成要件，也符合非法经营罪的犯罪构成要件。这种实施一个犯罪行为，同时侵犯数个犯罪客体，触犯数个罪名的情况即“想象竞合犯”，在此情形下，应依照处罚较重的规定定罪处罚，故人民检察院以张某涉嫌非法经营罪向人民法院提起公诉。律师寄语本案的特点明确反映了社会普遍存在的现象，很多人不懂法，盲目做事，迫于经济压力、金钱诱惑等不自觉走上犯罪道路。这些人并不是罪大恶极的人，他们可能就是我们身边普通的、需要养家的父母子女。本案中的张某就是一个活生生的例子，他平时为了养家糊口，一直勤苦劳作，总认为不贩毒、不杀人、不盗不抢，弄点瑕疵的物品小范围卖卖，不会有什么大事，完全没有意识到会触犯法律。因此，我们的普法教育仍需通过各种载体加大力度宣传，大家在日常生活中需特别注意，凡事三思而后行，做任何事情都要以法律为准绳，时常保持敏感与警惕，提高法律素养，勿以恶小而为之。",
+          "photoUrls":["https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhicdbhZrvdicj6qjnHhRxnFib2IITbv7CaF2CYnBicu9lLmnicH3QmMegjEHzuGia0HUSITacgGXoXuYSWg.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhicdbhZrvdicj6qjnHhRxnFib21OfOgHTh9FFWGLdAEmlQoGIsmpXTm2QNCRYonO81tbZc5RNuHYfOsg.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhicdbhZrvdicj6qjnHhRxnFib245LQo6TywSA7zwxsB4D63V7ajicBHNU3MWVZpibfxDEY1ZdFEhibJiaiaLw.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhicdbhZrvdicj6qjnHhRxnFib20vcc75nX3FtA6B17wnXQrWyaLk8vpEcr0vrYhB5R3KhFqhhJQ0Lucw.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhicdbhZrvdicj6qjnHhRxnFib23Jt1u3fVricx3glmZYozNyjYakpXmX4vyHicv2T8x4tiapoN78ylU01kQ.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/KLlsqk0ofhibfgIlBkZf5sggN51jJT4N2jVCIDN34GibZWEPZ48iafO4xLN4qLsgMwgjficFTzeF2g5fVNz0FqPRiaA.jpg"],
+          "videoUrls":null,
+          "isOriginal":0,
+          "authorshipContent":null
+        }
+    }
+  }
+}

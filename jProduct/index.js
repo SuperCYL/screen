@@ -81,7 +81,9 @@ module.exports = Event.extend(function Base(container, config) {
       // slidesPerGroup:4, //三个一组
       // centeredSlides: true, //第一个hover
       direction: 'vertical',
-      autoplay: true,
+      autoplay: {
+        delay:10000
+      },
       loop: true,
       mousewheel:true,
       slideToClickedSlide:true,
