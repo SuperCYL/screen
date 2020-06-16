@@ -2,7 +2,7 @@ var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
 //var Chart = require('XXX');
-var Swiper = require('./swiper.min.js');
+var bangdanDetailContSwiper = require('./swiper.min.js');
 require('./swiper.min.css');
 require('./index.css');
 
@@ -49,7 +49,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="nowDetailCont">
+    var html = `<div id="bangdanDetailCont">
                 <div class="swiper-container">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">`
@@ -94,14 +94,14 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    new Swiper('#nowDetailCont .swiper-container', {
+    new bangdanDetailContSwiper('#bangdanDetailCont .swiper-container', {
       direction: 'vertical',
       slidesPerView: 'auto',
       autoplay:true,
       // autoplay:{
       // delay: 3000,
       // },
-      speed:500000,
+      speed:20000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',

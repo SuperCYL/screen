@@ -1,13 +1,13 @@
 {
-  "name": "@hk-componentPackage/nowDetail",
-  "version": "0.1.2",
+  "name": "@hk-componentPackage/bangdanDetail",
+  "version": "0.5.7",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
     "lodash": "4.6.1"
   },
   "datav": {
-    "cn_name": "实时详情",
+    "cn_name": "榜单详情",
     "icon": "",
     "protocol": 2,
     "type": [
