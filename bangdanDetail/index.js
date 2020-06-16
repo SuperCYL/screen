@@ -2,6 +2,8 @@ var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
 //var Chart = require('XXX');
+var Swiper = require('./swiper.min.js');
+require('./swiper.min.css');
 require('./index.css');
 
 /**
@@ -38,101 +40,74 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
-    clearInterval(bangdanDetailtimer);
-    var d = [];
+    var textC = [];
     if(data.content && data.content.indexOf("\\n") !== -1){
-      d = data.content.split('\\n');
+      textC = data.content.split('\\n');
     }else{
-      d.push(data.content);
+      textC.push(data.content);
     }
-    var v = data.videoUrls?data.videoUrls:[];
+
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="bangdanDetail">`
-    if(data.contentType == 3){
-      html+=`<video width="432" height="900" controls="controls" autoplay="autoplay">
-      <source src="${v[0]}" type="video/mp4">
-    </video>`
-    }else{
+    var html = `<div id="nowDetailCont">
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">`
+
+    if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
-      if(!data.photoUrls && data.content && (!data.videoUrls||data.videoUrls.length==0)){ //内容
-        for(var i =0;i<d.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:44px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
+      
+
+      if(data.content){ //文字
+
+        for(var i =0;i<textC.length;i++){
+          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
         }
-      }
-  
-      else if(data.photoUrls && data.content && (!data.videoUrls||data.videoUrls.length==0)){ //图片和文字
-        for(var i =0;i<d.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
-          if(img[i]){
-            html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
-          }
-        }
-      }
-  
-      else if(!data.photoUrls && !data.content && data.videoUrls.length > 0){ //视频
-        for(var i =0;i<v.length;i++){
-          html+=`<video width="100%" height="300" controls>
-            <source src="${v[i]}" type="video/mp4">
-          </video>`
-        }
-      }
-  
-      else if(!data.photoUrls && data.content && data.videoUrls.length > 0){ //视频和内容
-        for(var i =0;i<d.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
-          if(v[i]){
-            html+=`<video width="100%" height="300" controls>
-              <source src="${v[i]}" type="video/mp4">
-            </video>`
-          }
-          
-        }
+        
       }
 
-      else if(!data.videoUrls && !data.content && data.photoUrls.length > 0){ //只有图片
+      if(data.photoUrls){ //图片
+
         for(var i =0;i<img.length;i++){
-            html+= `<img style="width:100%;height:300px;margin-top:20px;" src="${img[i]}" />`
+          
+            html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
         }
+
       }
-      else{  //都有
-        for(var i =0;i<v.length;i++){
-          html+=`<video width="100%" height="300" controls>
-            <source src="${v[i]}" type="video/mp4">
-          </video>`
-          if(d[i]){
-            html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${d[i]}</p>`
-          }
-         
+
+      if(data.photoUrls && data.content){ //图片和文字
+
+        for(var i =0;i<textC.length;i++){
+          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
           if(img[i]){
             html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
           }
         }
+
       }
 
     }
     
 
-    html += `</div>`
+    html += `</div></div></div></div>`
     
     this.container.html(html);
 
-
-    var bangdanDetailnewTop ; 
-    //使用定时器
-    var bangdanDetailtimer = setInterval(function(){
-    //文本是否已经到底部（底部出现在浏览器窗口中）
-      if($('#bangdanDetail').height()<890){
-          //清除定时器
-        clearInterval(bangdanDetailtimer);
-
-    }else{
-        //每次在原来的基础上移动
-        bangdanDetailnewTop =  $("#bangdanDetail").scrollTop();
-          $("#bangdanDetail").scrollTop(bangdanDetailnewTop + 5);
-        }
-    },700);
+    new Swiper('#nowDetailCont .swiper-container', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      autoplay:true,
+      // autoplay:{
+      // delay: 3000,
+      // },
+      speed:500000,
+      freeMode: true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      mousewheel: true,
+    });
 
 
     //如果有需要的话,更新样式

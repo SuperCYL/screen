@@ -1,9 +1,22 @@
-#bangdanDetail{
-    width:100%;
-    height:100%;
-    overflow-y:auto;
-    overflow-x:hidden;
-}
-#bangdanDetail::-webkit-scrollbar {
-    display: none;
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #nowDetailCont{
+      height:100%;
+  }
+  #nowDetailCont .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  #nowDetailCont .swiper-slide {
+    font-size: 18px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
   }
