@@ -43,7 +43,7 @@ module.exports = Event.extend(function Base(container, config) {
     var cfg = this.mergeConfig(config);
     let that = this;
     var html = `
-          <div id="leaderEmotionCloud" class="wrapper" style="height:100%;overflow:hidden;">
+          <div id="leaderEmotionCloud" class="wrapper" style="cursor:pointer;height:100%;overflow:hidden;">
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1){
@@ -78,11 +78,15 @@ module.exports = Event.extend(function Base(container, config) {
     });
     //如果有需要的话,更新样式
 
-    $("#leaderEmotionCloud .tagcloudItem").click(function(){
+    $("#leaderEmotionCloud .tagcloudItem").click(function(event){
+      event.stopPropagation(); 
       console.log($(this).attr("eventId"));
       that.emit('click', {eventId:$(this).attr("eventId")}); 
     })
-
+    $("#leaderEmotionCloud").click(function(){
+      console.log("全部")
+      that.emit('click', {eventId:""}); 
+    })
     this.updateStyle();
   },
   /**
