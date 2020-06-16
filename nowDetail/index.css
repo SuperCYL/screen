@@ -9,11 +9,11 @@ html, body {
   #nowDetailCont{
       height:100%;
   }
-  .swiper-container {
+  #nowDetailCont .swiper-container {
     width: 100%;
     height: 100%;
   }
-  .swiper-slide {
+  #nowDetailCont .swiper-slide {
     font-size: 18px;
     height: auto;
     -webkit-box-sizing: border-box;

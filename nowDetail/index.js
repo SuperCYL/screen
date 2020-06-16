@@ -54,7 +54,7 @@ module.exports = Event.extend(function Base(container, config) {
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">`
 
-    if(data.contentType != 3 && (!data.videoUrls||data.videoUrls.length==0)){
+    if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       
