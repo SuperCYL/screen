@@ -49,11 +49,7 @@ module.exports = Event.extend(function Base(container, config) {
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
     var html = `<div id="nowDetailCont">`
-    if(data.contentType == 3){
-      html+=`<video width="432" height="900" controls="controls" autoplay="autoplay">
-      <source src="${v[0]}" type="video/mp4">
-    </video>`
-    }else{
+    if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       if(!data.photoUrls && data.content && (!data.videoUrls||data.videoUrls.length==0)){ //内容
