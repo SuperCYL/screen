@@ -2,7 +2,7 @@ var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
 //var Chart = require('XXX');
-var Swiper = require('./swiper.min.js');
+var nowDetailContSwiper = require('./swiper.min.js');
 require('./swiper.min.css');
 require('./index.css');
 
@@ -94,14 +94,14 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    new Swiper('#nowDetailCont .swiper-container', {
+    new nowDetailContSwiper('#nowDetailCont .swiper-container', {
       direction: 'vertical',
       slidesPerView: 'auto',
       autoplay:true,
       // autoplay:{
       // delay: 3000,
       // },
-      speed:500000,
+      speed:200000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',

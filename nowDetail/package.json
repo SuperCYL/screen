@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/nowDetail",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -42,16 +42,7 @@
       }
     },
     "api_data": {
-      "source": {
-        "accountId":"1926818202",
-        "contentType":2,
-        "accountName":"平安江干",
-        "contentId":"J6UkxckcX",
-        "author":"平安江干",
-        "title":"【我背你走！齐腰深积水中民警背出受困老人】#平安2020# ",
-        "releaseTime":"2020-06-16 15:31:55",
-        "content":"转发微博\\n【我背你走！齐腰深积水中民警背出受困老人】#平安2020# 贵州遵义市新蒲新区新蒲镇3小时内降雨量将达100mm以上，辖区多处地势低洼路段积水严重。当日10时许，一辆小型客车冒险驶入兴遵大道遵义师院路段齐腰积水中，致使车辆被困。执勤民警丁汉中发现情况后立即上前查看，发现车辆因涉水熄火，车内4人较为紧张，便立即要求车上人员弃车逃生，并协助背出生病老人。  遵义交警支队的微博视频","photoUrls":null,"videoUrls":["https://ymr-test.oss-cn-hangzhou.aliyuncs.com/wb/0023ioacgx07E3tF9HUQ01041200cVsx0E010.mp4"],"isOriginal":0,"authorshipContent":"【我背你走！齐腰深积水中民警背出受困老人】#平安2020# 贵州遵义市新蒲新区新蒲镇3小时内降雨量将达100mm以上，辖区多处地势低洼路段积水严重。当日10时许，一辆小型客车冒险驶入兴遵大道遵义师院路段齐腰积水中，致使车辆被困。执勤民警丁汉中发现情况后立即上前查看，发现车辆因涉水熄火，车内4人较为紧张，便立即要求车上人员弃车逃生，并协助背出生病老人。  遵义交警支队的微博视频"
-      }
+      "source": {"accountId":"gh_e6fe35d9e186","contentType":1,"accountName":"平安温州播报","contentId":"72c6dc99fb1f75b93c626d55e4b0221d","author":"平安温州播报","title":"补贴100亿元并支持全国通用！全国版消费券要来了","releaseTime":"2020-06-15 17:22:00","content":"继国内100多个城市陆续发放本地版消费券后，全国版消费券来了！支付宝6月15日官宣，将从7月1日起连续17天发放全国通用的消费券，补贴总规模高达100亿元。这次发放的消费券支持全国通用，商家报名于即日开启。全国商家只要在支付宝搜索“消费券报名”，完成报名后即可在7月支持消费券核销。“再小的店都能报名，而且步骤极其简单，只需要填写店名、行业和营业地址即可。哪怕只有一张收钱码的路边小店，都可以享受到消费券带来的数字化红利。”支付宝消费券产品经理陈冠华介绍道。蚂蚁金服集团CEO胡晓明在5月宣布，会全面开放消费券技术，第一步就是先给小店安排上。此次，支付宝一方面把支持满减的门槛降到最低，满10元就能减2元，让小店也能用得上，另一方面开通了小店自己加码发消费券的工具，全面助力小店数字化和销量回升。今年，受到新冠肺炎疫情影响，部分线下小店因为无法开门营业，收入大幅下降，而开销和成本仍在，资金链断裂风险急剧上升。情势之下催生了一大批小店数字化转型：接入外卖拓展客流，开通无接触贷款，支持消费券核销等。截至目前，全国已有1200万小店单周收入实现了同比增长。审核：林唯、蓝莹\\n","photoUrls":["https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/yaDTG6mONRsicY7ZRFrAnL3N7XODQ9dSGndPhRfpucSXB36Xpr9ORGHicvL5SjR8CebNARzLiaLvI2nYZD2GbKnYQ.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/yaDTG6mONRsicY7ZRFrAnL3N7XODQ9dSGdaa99LdDR21vaFjFicFnSS6zopSq7ricNxGyzX9OO3Iw1JvlpjiaVXrnQ.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/yaDTG6mONRsicY7ZRFrAnL3N7XODQ9dSG1tvqPuGlmRaa6CA9Fr6TSMf3icz738RYeAhgJiaCiaxic1fs1p0g48KhSw.jpg","https://ymr-test.oss-cn-hangzhou.aliyuncs.com/gzh/qBYE0Q1LN6PicMbsSMXMeEMSNIiazEBhRu3POBko4YuzNxhkzR81nfzjMXibXiav3hb7hdTnGMic8LwXQ7juMam8VvA.jpg"],"videoUrls":null,"isOriginal":0,"authorshipContent":null}
    
     }
   }
