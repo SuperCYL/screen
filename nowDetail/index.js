@@ -50,7 +50,7 @@ module.exports = Event.extend(function Base(container, config) {
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
     var html = `<div id="nowDetailCont">
-                <div class="swiper-container">
+                <div class="swiper-container nowDetailContainer">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">`
 
@@ -94,7 +94,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    new nowDetailContSwiper('#nowDetailCont .swiper-container', {
+    new nowDetailContSwiper('#nowDetailCont .nowDetailContainer', {
       direction: 'vertical',
       slidesPerView: 'auto',
       autoplay:true,
