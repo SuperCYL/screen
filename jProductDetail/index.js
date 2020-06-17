@@ -52,7 +52,7 @@ module.exports = Event.extend(function Base(container, config) {
     var html = `<div id="jProductDetailCont">
                 <div class="swiper-container jProductDetailContainer">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide">`
+                <div class="swiper-slide jProductDetailSlide">`
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;margin:0;">${data.title}</p>`
@@ -94,13 +94,15 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
+    let h = document.getElementsByClassName("jProductDetailSlide")[0].offsetHeight;
+
     new jProductDetailContSwiper('#jProductDetailCont .jProductDetailContainer', {
       direction: 'vertical',
       slidesPerView: 'auto',
       autoplay:{
         delay: 1500,
       },
-      speed:20000,
+      speed:600*h,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
