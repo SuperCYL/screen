@@ -52,7 +52,7 @@ module.exports = Event.extend(function Base(container, config) {
     var html = `<div id="nowDetailCont">
                 <div class="swiper-container nowDetailContainer">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide">`
+                <div class="swiper-slide nowDetailSlide">`
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
@@ -93,6 +93,7 @@ module.exports = Event.extend(function Base(container, config) {
     html += `</div></div></div></div>`
     
     this.container.html(html);
+    let h = document.getElementsByClassName("nowDetailSlide")[0].offsetHeight;
 
     new nowDetailContSwiper('#nowDetailCont .nowDetailContainer', {
       direction: 'vertical',
@@ -100,7 +101,7 @@ module.exports = Event.extend(function Base(container, config) {
       autoplay:{
       delay: 1500,
       },
-      speed:600000,
+      speed:600*h,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
