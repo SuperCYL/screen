@@ -94,21 +94,25 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    let h = document.getElementsByClassName("jProductDetailSlide")[0].offsetHeight;
+    console.log(document.getElementsByClassName("jProductDetailSlide"))
+      let h = document.getElementsByClassName("jProductDetailSlide")[0].scrollHeight;
+      console.log(h)
 
-    new jProductDetailContSwiper('#jProductDetailCont .jProductDetailContainer', {
-      direction: 'vertical',
-      slidesPerView: 'auto',
-      autoplay:{
-        delay: 1500,
-      },
-      speed:600*h,
-      freeMode: true,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      mousewheel: true,
-    });
+      new jProductDetailContSwiper('#jProductDetailCont .jProductDetailContainer', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        autoplay:{
+          delay: 1500,
+        },
+        speed:100*h,
+        freeMode: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        mousewheel: true,
+      });
+   
+    
 
 
     //如果有需要的话,更新样式

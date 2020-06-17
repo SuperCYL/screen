@@ -1,11 +1,7 @@
 var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
-require('./bubble.css');
-require('./bubble');
-
-
-
+require('./index.css')
 /**
  * 马良基础类
  */
