@@ -97,10 +97,9 @@ module.exports = Event.extend(function Base(container, config) {
     new jProductDetailContSwiper('#jProductDetailCont .jProductDetailContainer', {
       direction: 'vertical',
       slidesPerView: 'auto',
-      autoplay:true,
-      // autoplay:{
-      // delay: 3000,
-      // },
+      autoplay:{
+        delay: 1500,
+      },
       speed:20000,
       freeMode: true,
       scrollbar: {
