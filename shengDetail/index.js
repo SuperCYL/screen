@@ -55,7 +55,7 @@ module.exports = Event.extend(function Base(container, config) {
                 <div class="swiper-slide">`
 
     if(data.contentType != 3){
-      html+= `<p style="font-size:36px;">${data.title}</p>`
+      html+= `<p style="font-size:36px;margin:0;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       
 
@@ -101,7 +101,7 @@ module.exports = Event.extend(function Base(container, config) {
       // autoplay:{
       // delay: 3000,
       // },
-      speed:200000,
+      speed:20000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
