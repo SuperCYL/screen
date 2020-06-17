@@ -97,10 +97,10 @@ module.exports = Event.extend(function Base(container, config) {
     new shengDetailContSwiper('#shengDetailCont .swiper-container', {
       direction: 'vertical',
       slidesPerView: 'auto',
-      autoplay:true,
-      // autoplay:{
-      // delay: 3000,
-      // },
+      // autoplay:true,
+      autoplay:{
+      delay: 1500,
+      },
       speed:20000,
       freeMode: true,
       scrollbar: {
