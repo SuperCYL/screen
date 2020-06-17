@@ -109,7 +109,8 @@ module.exports = Event.extend(function Base(container, config) {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-        mousewheel: true,
+        // mousewheel: true,
+        
       });
    
     

@@ -94,7 +94,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    let h = document.getElementsByClassName("shengDetailSlide")[0].offsetHeight;
+    let h = document.getElementsByClassName("shengDetailSlide")[0].scrollHeight;
 
     new shengDetailContSwiper('#shengDetailCont .shengDetailContent', {
       direction: 'vertical',
@@ -103,7 +103,7 @@ module.exports = Event.extend(function Base(container, config) {
       autoplay:{
       delay: 1500,
       },
-      speed:600*h,
+      speed:100*h,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
