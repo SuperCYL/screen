@@ -97,11 +97,10 @@ module.exports = Event.extend(function Base(container, config) {
     new nowDetailContSwiper('#nowDetailCont .nowDetailContainer', {
       direction: 'vertical',
       slidesPerView: 'auto',
-      autoplay:true,
-      // autoplay:{
-      // delay: 3000,
-      // },
-      speed:200000,
+      autoplay:{
+      delay: 1500,
+      },
+      speed:600000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
