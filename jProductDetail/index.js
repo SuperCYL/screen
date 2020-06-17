@@ -101,7 +101,7 @@ module.exports = Event.extend(function Base(container, config) {
       // autoplay:{
       // delay: 3000,
       // },
-      speed:50000,
+      speed:20000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
