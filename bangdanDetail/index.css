@@ -1,6 +1,7 @@
 html, body {
     position: relative;
     height: 100%;
+    font-family: "微软雅黑";
   }
   body {
     margin: 0;
@@ -18,5 +19,4 @@ html, body {
     height: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 30px;
   }

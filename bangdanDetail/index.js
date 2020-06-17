@@ -50,7 +50,7 @@ module.exports = Event.extend(function Base(container, config) {
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
     var html = `<div id="bangdanDetailCont">
-                <div class="swiper-container">
+                <div class="swiper-container bangdanDetailContent">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">`
 
@@ -94,14 +94,13 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
 
-    new bangdanDetailContSwiper('#bangdanDetailCont .swiper-container', {
+    new bangdanDetailContSwiper('#bangdanDetailCont .bangdanDetailContent', {
       direction: 'vertical',
       slidesPerView: 'auto',
-      autoplay:true,
-      // autoplay:{
-      // delay: 3000,
-      // },
-      speed:200000,
+      autoplay:{
+        delay: 1500,
+      },
+      speed:600000,
       freeMode: true,
       scrollbar: {
         el: '.swiper-scrollbar',
