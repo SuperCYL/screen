@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/leaderEmotion",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -67,6 +67,66 @@
             "eventId":"9d91357e5f7e113a70fffad63982d6ec",
             "title":"习近平呀",
             "rankId":3
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平呀",
+          "rankId":4
         }
     ]
     }

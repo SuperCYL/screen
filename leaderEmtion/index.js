@@ -39,20 +39,20 @@ module.exports = Event.extend(function Base(container, config) {
     var cfg = this.mergeConfig(config);
     let that = this;
     var html = `
-          <div id="leaderEmotionCloud" class="wrapper" style="cursor:pointer;height:100%;overflow:hidden;">
+          <div id="leaderEmotionCloud">
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1){
-                html+=`<a class="tagcloudItem b01" eventId="${data[i]["eventId"]}" href="#" style="font-size:56px;color:#F74C64">${data[i]["title"]}</a>`
+                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:56px;color:#F74C64">${data[i]["title"]}</a>`
               }
               else if(data[i]["rankId"] == 2){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:52px;color:#FFA633">${data[i]["title"]}</a>` 
+                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:52px;color:#FFA633">${data[i]["title"]}</a>` 
               }
               else if(data[i]["rankId"] == 3){
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:48px;color:#F9C824">${data[i]["title"]}</a>` 
+                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:48px;color:#F9C824">${data[i]["title"]}</a>` 
               }
               else{
-                html+=`<a class="tagcloudItem b02" eventId="${data[i]["eventId"]}" href="#" style="font-size:40px;color:#FFFFFF">${data[i]["title"]}</a>` 
+                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:40px;color:#FFFFFF">${data[i]["title"]}</a>` 
               }
             }
             
@@ -62,16 +62,7 @@ module.exports = Event.extend(function Base(container, config) {
     //更新图表
     //this.chart.render(data, cfg);
     this.container.html(html)
-    /*3D标签云*/
-    tagcloud({
-        selector: ".tagcloud",  //元素选择器
-        fontsize: 24,       //基本字体大小, 单位px
-        radius: 100,         //滚动半径, 单位px 页面宽度和高度的五分之一
-        mspeed: "slow",   //滚动最大速度, 取值: slow, normal(默认), fast
-        ispeed: "slow",   //滚动初速度, 取值: slow, normal(默认), fast
-        direction: 135,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
-        keep: false          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
-    });
+    
     //如果有需要的话,更新样式
 
     $("#leaderEmotionCloud .tagcloudItem").click(function(event){
