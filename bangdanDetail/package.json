@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/bangdanDetail",
-  "version": "0.5.9",
+  "version": "0.6.1",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
