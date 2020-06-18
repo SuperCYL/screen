@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/leaderEmotion",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -55,77 +55,77 @@
       "source": [
         {
             "eventId":"40ecdc0929f590560e23c339c1374da6",
-            "title":"武汉加油",
+            "title":"武汉加",
             "rankId":1
         },
         {
             "eventId":"793ccd9e41c039f40e20499b233cbfcf",
-            "title":"杭州杭州",
+            "title":"杭州杭",
             "rankId":2
         },
         {
             "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-            "title":"习近平呀",
+            "title":"习近平",
             "rankId":3
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
-          "title":"习近平呀",
+          "title":"习近平",
           "rankId":4
         }
     ]

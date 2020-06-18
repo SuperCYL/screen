@@ -1,10 +1,8 @@
 var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
-//var Chart = require('XXX');
-var nowDetailContSwiper = require('./swiper.min.js');
-require('./swiper.min.css');
-require('./index.css');
+
+require("./index.css")
 
 /**
  * 马良基础类
@@ -49,10 +47,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="nowDetailCont">
-                <div class="swiper-container nowDetailContainer">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide nowDetailSlide">`
+    var html = `<div id="nowDetailCont"><div id="childDiv">`
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
@@ -90,25 +85,21 @@ module.exports = Event.extend(function Base(container, config) {
     }
     
 
-    html += `</div></div></div></div>`
+    html += `</div></div>`
     
     this.container.html(html);
-    let h = document.getElementsByClassName("nowDetailSlide")[0].offsetHeight;
 
-    new nowDetailContSwiper('#nowDetailCont .nowDetailContainer', {
-      direction: 'vertical',
-      slidesPerView: 'auto',
-      autoplay:{
-      delay: 1500,
-      },
-      speed:600*h,
-      freeMode: true,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      mousewheel: true,
-    });
-
+    var parent = document.getElementById('nowDetailCont');
+    	var child1 = document.getElementById('childDiv');
+    	var child2 = document.getElementById('child2');
+    	child2.innerHTML = child1.innerHTML;
+    	setInterval(function () {
+       		if(parent.scrollTop >= child1.scrollHeight) {
+           		parent.scrollTop = 0;
+       		} else {
+           		parent.scrollTop++;
+            }
+    	}, 20);
 
     //如果有需要的话,更新样式
     this.updateStyle();
