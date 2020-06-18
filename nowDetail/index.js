@@ -7,6 +7,19 @@ require("./index.css")
 /**
  * 马良基础类
  */
+var firstInterval;
+function firstAlert(){
+  if(firstInterval) {
+    clearInterval(firstInterval);
+    firstInterval = setInterval(function(){
+      document.getElementById("nowDetailCont").scrollTop++;
+    }, 20);
+  }else{
+    firstInterval = setInterval(function(){
+      document.getElementById("nowDetailCont").scrollTop++;
+    }, 20);
+  }
+}
 module.exports = Event.extend(function Base(container, config) {
   this.config = {
     theme: {}
@@ -38,6 +51,7 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
+
     var textC = [];
     if(data.content && data.content.indexOf("\\n") !== -1){
       textC = data.content.split('\\n');
@@ -89,9 +103,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
     
-    setInterval(function () {
-        document.getElementById('nowDetailCont').scrollTop++;
-    }, 20);
+    firstAlert(document.getElementById('nowDetailCont'));
 
     //如果有需要的话,更新样式
     this.updateStyle();
