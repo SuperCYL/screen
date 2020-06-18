@@ -15,8 +15,8 @@ html, body {
     height: 100%;
   }
   #shengSwiper .swiper-slide {
-    background:rgba(38,186,241,0.3);
-    border:1px solid rgba(38,186,241,1);
+    background:rgba(20,141,227,0.3);
+    border:1px solid rgba(20,141,227,1);
     /* box-shadow:0px 0px 35px 0px rgba(0,252,255,0.55); */
     text-align: center;
     font-size: 18px;
@@ -45,8 +45,8 @@ html, body {
   #shengSwiper .swiper-slide-active,.swiper-slide-duplicate-active{
     /* width:480px; */
     height:127px;
-    background:rgba(38,186,241,0.55);
-    border:1px solid rgba(38,186,241,1);
+    background:rgba(20,141,227,0.9);
+    border:1px solid rgba(20,141,227,1);
   }
   #shengSwiper .swiper-slide .eventName{
     font-size: 26px;
