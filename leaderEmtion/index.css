@@ -10,72 +10,73 @@
 #leaderEmotionCloud .b0{
     position: absolute;
     left: 110px;
-    top: 180px;
+    top: 200px;
 }
 #leaderEmotionCloud .b1{
     position: absolute;
-    top: 110px;
+    top: 135px;
     left: 20px;
 }
 #leaderEmotionCloud .b2{
     position: absolute;
-    bottom: 180px;
-    right: 0;
+    bottom: 170px;
+    right: 20px;
 }
 #leaderEmotionCloud .b3{
     position: absolute;
-    top: 130px;
-    right: 0px;
+    top: 160px;
+    right: 30px;
 }
 #leaderEmotionCloud .b4{
     position: absolute;
-    top: 70px;
-    right: 0;
+    bottom: 120px;
+    right: 10px;
 }
 #leaderEmotionCloud .b5{
     position: absolute;
-    top: 240px;
-    left: 10px;
+    top: 75px;
+    left: 30px;
 }
 #leaderEmotionCloud .b6{
     position: absolute;
-    top: 45px;
-    left: 30px;
+    top: 280px;
+    left: 10px;
+    
 }
 #leaderEmotionCloud .b7{
     position: absolute;
-    top: 20px;
+    top: 65px;
     right: 30px;
 }
 #leaderEmotionCloud .b8{
     position: absolute;
-    bottom: 140px;
-    left: 10px;
+    bottom: 110px;
+    left: 40px;
 }
 #leaderEmotionCloud .b9{
     position: absolute;
-    top: 0;
-    left: 10px;
+    top: 20px;
+    left: 20px;
 }
 #leaderEmotionCloud .b10{
     position: absolute;
-    bottom: 140px;
-    right: 10px;
+    bottom: 60px;
+    right: 130px;
 }
 #leaderEmotionCloud .b11{
     position: absolute;
-    bottom: 100px;
-    right: 10px;
+    top: 110px;
+    right: 0;
 }
 #leaderEmotionCloud .b12{
     position: absolute;
-    bottom: 60px;
+    bottom: 10px;
     left: 40px;
 }
 #leaderEmotionCloud .b13{
     position: absolute;
-    bottom: 10px;
-    left: 0;
+    top: 15px;
+    right: 60px;
 }
 #leaderEmotionCloud .b14{
     position: absolute;
