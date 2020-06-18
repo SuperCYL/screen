@@ -51,8 +51,9 @@ module.exports = Event.extend(function Base(container, config) {
     // document.getElementsByTagName('head')[0].appendChild(oMeta);
 
     let cont = data.irContent.replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
+    cont = cont.replace(/>;/g,'>');
     cont = escape2Html(cont);
-
+    // cont = cont.replace(";","");
     //更新图表
     var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
     html+=`<p style="font-size:44px;">${data.doctitle}</p>`

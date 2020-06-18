@@ -47,7 +47,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="nowDetailCont"><div id="childDiv">`
+    var html = `<div id="nowDetailCont">`
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
@@ -85,21 +85,13 @@ module.exports = Event.extend(function Base(container, config) {
     }
     
 
-    html += `</div></div>`
+    html += `</div>`
     
     this.container.html(html);
-
-    var parent = document.getElementById('nowDetailCont');
-    	var child1 = document.getElementById('childDiv');
-    	var child2 = document.getElementById('child2');
-    	child2.innerHTML = child1.innerHTML;
-    	setInterval(function () {
-       		if(parent.scrollTop >= child1.scrollHeight) {
-           		parent.scrollTop = 0;
-       		} else {
-           		parent.scrollTop++;
-            }
-    	}, 20);
+    
+    setInterval(function () {
+        document.getElementById('nowDetailCont').scrollTop++;
+    }, 20);
 
     //如果有需要的话,更新样式
     this.updateStyle();
