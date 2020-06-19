@@ -1,0 +1,393 @@
+{
+  "name": "@hk-componentPackage/shengBig",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "省政法委矩阵放大版",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "480",
+      "height": "504",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      },
+      "color": {
+        "name": "正文字体颜色",
+        "type": "color",
+        "default": "#fff"
+      }
+    },
+    "events": {
+      "itemClick": {
+        "description": "点击事件",
+        "fields": {
+          "value": {
+            "item":{}
+          }
+        }
+      },
+      "rollEvent": {                       
+        "description": "滚动事件",          
+        "fields": {                         
+          "value": {   
+            "item":{}               
+          }
+        }
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+          "id": "61f37a0d704c96f5f2a1eeefa3fd102f",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6837651909315153159",
+          "title": "涉案猴子是猕猴，属于国家二级重点野生保护动物。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-13 10:21:37",
+          "url": "https://www.iesdouyin.com/share/video/6837651909315153159/?region=CN&mid=6837651908242131719&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "641557553022dc0b9e9ddb27eda39e65",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6837360046129663239",
+          "title": "与大奖擦肩而过。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-12 15:29:03",
+          "url": "https://www.iesdouyin.com/share/video/6837360046129663239/?region=CN&mid=6812176423327910660&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "d154c5420d55306d8e51fc66cb233a21",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6837281134573849864",
+          "title": "也是个“狠人”。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-12 10:22:49",
+          "url": "https://www.iesdouyin.com/share/video/6837281134573849864/?region=CN&mid=6837281135853161223&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "0e21e9ff2d1f74e1ccfcd98e2513d659",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836983651738176775",
+          "title": "怎么有些人就是管不住自己？@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-11 15:08:27",
+          "url": "https://www.iesdouyin.com/share/video/6836983651738176775/?region=CN&mid=6836983655164824334&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "d93107ce2b8d1e6cfbc919cfcc64cced",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836919672466722055",
+          "title": "为什么总有冒名顶替的事？@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-11 11:00:10",
+          "url": "https://www.iesdouyin.com/share/video/6836919672466722055/?region=CN&mid=6836611273665432328&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "0094d05597ecb9dc6519c7ba16fc9ac4",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836891356904852744",
+          "title": "你大爷还是你大爷。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-11 09:10:18",
+          "url": "https://www.iesdouyin.com/share/video/6836891356904852744/?region=CN&mid=6836891354833226509&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "abd17f7209b4714a4a949e6acee09219",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836619376532245767",
+          "title": "家属也要做好看护，尽快带女孩就医。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-10 15:34:52",
+          "url": "https://www.iesdouyin.com/share/video/6836619376532245767/?region=CN&mid=6836619400477526792&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "b242759b986dcb9ecac146b80fec5af7",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836582136628219143",
+          "title": "男子ktv喝醉后发酒疯，期间还打了民警。目前已被刑事拘留。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-10 13:10:21",
+          "url": "https://www.iesdouyin.com/share/video/6836582136628219143/?region=CN&mid=6836582148661644039&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "cff474b543012c8189a99862fdd4c0a7",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836528899644476679",
+          "title": "人心不足蛇吞象。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-10 09:43:46",
+          "url": "https://www.iesdouyin.com/share/video/6836528899644476679/?region=CN&mid=6836528878572342029&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "0b00a5408b42e56a9e37dd4b76e7c096",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836275248787229960",
+          "title": "拜佛拜成这样，也挺可悲。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-09 17:19:29",
+          "url": "https://www.iesdouyin.com/share/video/6836275248787229960/?region=CN&mid=6836275252297747208&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "271babf6184e23b412e1dbaa065579e3",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836177828187344135",
+          "title": "为解馋，男子放两条饲养的格力犬，撕咬私人饲养的狗狗。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-09 11:01:26",
+          "url": "https://www.iesdouyin.com/share/video/6836177828187344135/?region=CN&mid=6836177821384051463&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "4ec1026936578f9dee3743c034c256ab",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6836141811703041294",
+          "title": "往事皆随风而逝。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-09 08:41:41",
+          "url": "https://www.iesdouyin.com/share/video/6836141811703041294/?region=CN&mid=6836141754467535630&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "6923436957ec953f7353402e98545e34",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835892328784317709",
+          "title": "这一脚救了一个家庭。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-08 16:33:39",
+          "url": "https://www.iesdouyin.com/share/video/6835892328784317709/?region=CN&mid=6835892343712123655&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "155fc048be933fa84f715ca62ccb6258",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835838214805179655",
+          "title": "希望她能早日好起来。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-08 13:03:34",
+          "url": "https://www.iesdouyin.com/share/video/6835838214805179655/?region=CN&mid=6835838207201004296&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "799b48df41e02ec3ebfabec5ef9d0610",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835788231775128840",
+          "title": "团结就是力量。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-08 09:49:36",
+          "url": "https://www.iesdouyin.com/share/video/6835788231775128840/?region=CN&mid=6835788233993997063&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "79423a55af4ad91ca8c55771fa1e6baf",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835407448237542670",
+          "title": "所以这要偷到何年何月？@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-07 09:11:58",
+          "url": "https://www.iesdouyin.com/share/video/6835407448237542670/?region=CN&mid=6835407429811964679&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "951c1de3e58c7fbde1eba9b9983c9cc8",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835137669517905166",
+          "title": "天网恢恢@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-06 15:45:05",
+          "url": "https://www.iesdouyin.com/share/video/6835137669517905166/?region=CN&mid=6809826494035020552&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "99d65f6e1871b3869086115181a4dcf0",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6835047483442302216",
+          "title": "本有大好青春，却因为一把火……@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-06 09:55:07",
+          "url": "https://www.iesdouyin.com/share/video/6835047483442302216/?region=CN&mid=6835047478057093901&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "b138db20a8eaa89acbd77b6ce20b131c",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6834758085035216141",
+          "title": "签字需谨慎。@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-05 15:12:07",
+          "url": "https://www.iesdouyin.com/share/video/6834758085035216141/?region=CN&mid=6654877195095280397&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        },
+        {
+          "id": "072d68fa66ef3007005dc374a34c0692",
+          "accountId": "2176659883043102",
+          "accountName": "浙江政法",
+          "contentId": "6834696671893507335",
+          "title": "这个结果还满意吗？@抖音小助手 #了不起的守护者",
+          "content": null,
+          "icon": "https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/tubiao/douyin.png",
+          "releaseTime": "2020-06-05 11:13:47",
+          "url": "https://www.iesdouyin.com/share/video/6834696671893507335/?region=CN&mid=6816136714059320076&u_code=0&titleType=title",
+          "isOriginal": null,
+          "authorshipContent": null,
+          "contentType": 3,
+          "photoUrl": null,
+          "videoUrl": null
+        }
+      ]
+     
+    }
+  }
+}
