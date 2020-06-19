@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/leaderEmtionBig",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -14,8 +14,8 @@
       "regular"
     ],
     "view": {
-      "width": "432",
-      "height": "500",
+      "width": "976",
+      "height": "1040",
       "minWidth": "200",
       "minHeight": "100"
     },
