@@ -1,14 +1,27 @@
 var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
-//var Chart = require('XXX');
-var shengDetailContSwiper = require('./swiper.min.js');
-require('./swiper.min.css');
+
 require('./index.css');
 
 /**
  * 马良基础类
  */
+
+var shengDetailInterval;
+function shengDetailIntervalEvent(){
+  if(shengDetailInterval) {
+    clearInterval(shengDetailInterval);
+    shengDetailInterval = setInterval(function(){
+      document.getElementById("shengDetailCont").scrollTop++;
+    }, 20);
+  }else{
+    shengDetailInterval = setInterval(function(){
+      document.getElementById("shengDetailCont").scrollTop++;
+    }, 20);
+  }
+}
+
 module.exports = Event.extend(function Base(container, config) {
   this.config = {
     theme: {}
@@ -49,10 +62,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     var img = data.photoUrls?data.photoUrls:[];
     //更新图表
-    var html = `<div id="shengDetailCont">
-                <div class="swiper-container shengDetailContent">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide shengDetailSlide">`
+    var html = `<div id="shengDetailCont">`
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;margin:0;">${data.title}</p>`
@@ -90,27 +100,10 @@ module.exports = Event.extend(function Base(container, config) {
     }
     
 
-    html += `</div></div></div></div>`
+    html += `</div>`
     
     this.container.html(html);
-
-    let h = document.getElementsByClassName("shengDetailSlide")[0].scrollHeight;
-
-    new shengDetailContSwiper('#shengDetailCont .shengDetailContent', {
-      direction: 'vertical',
-      slidesPerView: 'auto',
-      // autoplay:true,
-      autoplay:{
-      delay: 1500,
-      },
-      speed:100*h,
-      freeMode: true,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      mousewheel: true,
-    });
-
+    shengDetailIntervalEvent();
 
     //如果有需要的话,更新样式
     this.updateStyle();
