@@ -1,0 +1,85 @@
+#leaderEmotionCloudBig{
+    cursor:pointer;
+    height:100%;
+    overflow:hidden;
+    position: relative;
+}
+#leaderEmotionCloudBig a{
+    text-decoration: none;
+}
+#leaderEmotionCloudBig .b0{
+    position: absolute;
+    left: 130px;
+    top: 200px;
+}
+#leaderEmotionCloudBig .b1{
+    position: absolute;
+    top: 135px;
+    left: 60px;
+}
+#leaderEmotionCloudBig .b2{
+    position: absolute;
+    bottom: 170px;
+    right: 40px;
+}
+#leaderEmotionCloudBig .b3{
+    position: absolute;
+    top: 160px;
+    right: 70px;
+}
+#leaderEmotionCloudBig .b4{
+    position: absolute;
+    bottom: 115px;
+    right: 70px;
+}
+#leaderEmotionCloudBig .b5{
+    position: absolute;
+    top: 75px;
+    left: 80px;
+}
+#leaderEmotionCloudBig .b6{
+    position: absolute;
+    top: 280px;
+    left: 80px;
+    
+}
+#leaderEmotionCloudBig .b7{
+    position: absolute;
+    top: 65px;
+    right: 70px;
+}
+#leaderEmotionCloudBig .b8{
+    position: absolute;
+    bottom: 110px;
+    left: 60px;
+}
+#leaderEmotionCloudBig .b9{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+#leaderEmotionCloudBig .b10{
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+}
+#leaderEmotionCloudBig .b11{
+    position: absolute;
+    top: 110px;
+    right: 40px;
+}
+#leaderEmotionCloudBig .b12{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+#leaderEmotionCloudBig .b13{
+    position: absolute;
+    top: 15px;
+    right: 60px;
+}
+#leaderEmotionCloudBig .b14{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+}

@@ -1,0 +1,134 @@
+{
+  "name": "@hk-componentPackage/leaderEmtionBig",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "领导人舆情放大版",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "432",
+      "height": "500",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "events": {                              
+      "click": {                       
+        "description": "点击事件",          
+        "fields": {                         
+          "value": {   
+            "eventId":"唯一标示"               
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+            "eventId":"40ecdc0929f590560e23c339c1374da6",
+            "title":"武汉加",
+            "rankId":1
+        },
+        {
+            "eventId":"793ccd9e41c039f40e20499b233cbfcf",
+            "title":"杭州杭",
+            "rankId":2
+        },
+        {
+            "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+            "title":"习近平",
+            "rankId":3
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        },
+        {
+          "eventId":"9d91357e5f7e113a70fffad63982d6ec",
+          "title":"习近平",
+          "rankId":4
+        }
+    ]
+    }
+  }
+}
