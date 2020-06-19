@@ -1,0 +1,83 @@
+{
+  "name": "@hk-componentPackage/publicityResultsTab",
+  "version": "0.2.2",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "publicityResultsTab",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "800",
+      "height": "700",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "events": {
+      "click": {
+        "description": "点击事件",
+        "fields": {
+          "value": {
+            "type": "唯一标示"
+          }
+        }
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+          "type": 1,
+          "typeName": "微信",
+          "fansCount": 300,
+          "accountCount": 5
+        },
+        {
+          "type": 2,
+          "typeName": "微博",
+          "fansCount": 300,
+          "accountCount": 2
+        },
+        {
+          "type": 3,
+          "typeName": "抖音",
+          "fansCount": 300,
+          "accountCount": 2
+        },
+        {
+          "type": 4,
+          "typeName": "头条",
+          "fansCount": 300,
+          "accountCount": 2
+        }
+      ]
+    }
+  }
+}
