@@ -49,11 +49,11 @@ html, body {
     border:1px solid rgba(20,141,227,1);
   }
   #shengBigSwiper .swiper-slide .eventName{
-    font-size: 26px;
+    font-size: 48px;
     position: absolute;
-    top: 5px;
+    top: 37px;
     text-align: left;
-    left: 50px;
+    left: 80px;
     color:#fff;
     opacity: 0.5;
   }
@@ -62,19 +62,19 @@ html, body {
   }
   #shengBigSwiper .swiper-slide .eventSummary{
     width: 480px;
-    font-size: 28px;
+    font-size: 50px;
     position: absolute;
-    bottom: 10px;
+    bottom: 37px;
     text-align: left;
-    left: 50px;
+    left: 80px;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
   }
   #shengBigSwiper .swiper-slide .eventTime{
     position: absolute;
-    font-size: 26px;
-    top: 10px;
+    font-size: 48px;
+    top: 44px;
     right: 10px;
     color:#fff;
     opacity: 0.5;
@@ -83,10 +83,10 @@ html, body {
     opacity: 100;
   }
   #shengBigSwiper .swiper-slide .eventCover{
-    width:26px;
-    height:26px;
+    width:43px;
+    height:43px;
     position: absolute;
-    top:10px;
+    top:48px;
     left:10px;
     object-fit: cover;
   }
