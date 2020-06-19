@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/jProductBig",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -14,8 +14,8 @@
       "regular"
     ],
     "view": {
-      "width": "480",
-      "height": "504",
+      "width": "912",
+      "height": "1016",
       "minWidth": "200",
       "minHeight": "100"
     },
