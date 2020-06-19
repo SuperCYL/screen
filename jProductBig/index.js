@@ -45,7 +45,7 @@ module.exports = Event.extend(function Base(container, config) {
     data = this.data(data);
     //如果有需要的话,更新样式
     let that = this;
-    var html = `<div id="jProjectSwiper" style="height:100%;"><div class="swiper-container"><div class="swiper-wrapper">`
+    var html = `<div id="jProjectBigSwiper" style="height:100%;"><div class="swiper-container"><div class="swiper-wrapper">`
       for(var i =0;i<data.length;i++){
       
         html+=`<div class="swiper-slide" eventId="${data[i]["contentId"]}">`
@@ -75,7 +75,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     this.container.html(html);
 
-    new Swiper('#jProjectSwiper .swiper-container', {
+    new Swiper('#jProjectBigSwiper .swiper-container', {
       slidesPerView: 4,
       spaceBetween: 10,
       // slidesPerGroup:4, //三个一组
@@ -93,7 +93,7 @@ module.exports = Event.extend(function Base(container, config) {
       },
       on:{
         slideChangeTransitionStart: function(){
-          var eventId = $("#jProjectSwiper .swiper-slide-active").attr("eventId");
+          var eventId = $("#jProjectBigSwiper .swiper-slide-active").attr("eventId");
           for(var i = 0;i<data.length;i++){
             if(eventId == data[i]["contentId"]){
               console.log(data[i]["contentId"])
