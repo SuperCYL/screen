@@ -1,0 +1,58 @@
+{
+  "name": "@hk-componentPackage/shengDetailBig",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "省政法委矩阵详情放大版",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "464",
+      "height": "488",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "api_data": {
+      "source": {
+        "accountId":"1926818202",
+        "contentType":2,
+        "accountName":"平安江干",
+        "contentId":"J6UkxckcX",
+        "author":"平安江干",
+        "title":"【我背你走！齐腰深积水中民警背出受困老人】#平安2020# ",
+        "releaseTime":"2020-06-16 15:31:55",
+        "content":"转发微博\\n【我背你走！齐腰深积水中民警背出受困老人】#平安2020# 贵州遵义市新蒲新区新蒲镇3小时内降雨量将达100mm以上，辖区多处地势低洼路段积水严重。当日10时许，一辆小型客车冒险驶入兴遵大道遵义师院路段齐腰积水中，致使车辆被困。执勤民警丁汉中发现情况后立即上前查看，发现车辆因涉水熄火，车内4人较为紧张，便立即要求车上人员弃车逃生，并协助背出生病老人。  遵义交警支队的微博视频","photoUrls":null,"videoUrls":["https://ymr-test.oss-cn-hangzhou.aliyuncs.com/wb/0023ioacgx07E3tF9HUQ01041200cVsx0E010.mp4"],"isOriginal":0,"authorshipContent":"【我背你走！齐腰深积水中民警背出受困老人】#平安2020# 贵州遵义市新蒲新区新蒲镇3小时内降雨量将达100mm以上，辖区多处地势低洼路段积水严重。当日10时许，一辆小型客车冒险驶入兴遵大道遵义师院路段齐腰积水中，致使车辆被困。执勤民警丁汉中发现情况后立即上前查看，发现车辆因涉水熄火，车内4人较为紧张，便立即要求车上人员弃车逃生，并协助背出生病老人。  遵义交警支队的微博视频"
+      }
+   
+    }
+  }
+}
