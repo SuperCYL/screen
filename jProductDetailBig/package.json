@@ -1,0 +1,54 @@
+{
+  "name": "@hk-componentPackage/jProductDetailBig",
+  "version": "0.1.7",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "竞品分析详情放大版",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "464",
+      "height": "488",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "api_data": {
+      "source": {"accountId":"gh_b9d842e1cb13","contentType":1,"accountName":null,"contentId":"30bda5ab7ef16df49301db0feadbd24c","author":"山东高法","title":"理解和适用《新民诉证据司法解释》的8个法律要点​","releaseTime":"2020-06-17 00:09:00",
+        "content":"法院\\n《人民司法》2020年第16期\\n编辑：石 慧\\n审核：傅德慧\\n别忘了点击右下方的“在看”，可给小编加鸡腿哦\\n",
+        "photoUrls":[],
+        "videoUrls":null,
+        "isOriginal":0,
+        "authorshipContent":null}
+   
+    }
+  }
+}
