@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/jProductDetail",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
