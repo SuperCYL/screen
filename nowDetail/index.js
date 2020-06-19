@@ -103,7 +103,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
     
-    firstAlert(document.getElementById('nowDetailCont'));
+    firstAlert();
 
     //如果有需要的话,更新样式
     this.updateStyle();
