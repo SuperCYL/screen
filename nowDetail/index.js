@@ -7,15 +7,15 @@ require("./index.css")
 /**
  * 马良基础类
  */
-var firstInterval;
-function firstAlert(){
-  if(firstInterval) {
-    clearInterval(firstInterval);
-    firstInterval = setInterval(function(){
+var nowDetailInterval;
+function nowDetailIntervalEvent(){
+  if(nowDetailInterval) {
+    clearInterval(nowDetailInterval);
+    nowDetailInterval = setInterval(function(){
       document.getElementById("nowDetailCont").scrollTop++;
     }, 20);
   }else{
-    firstInterval = setInterval(function(){
+    nowDetailInterval = setInterval(function(){
       document.getElementById("nowDetailCont").scrollTop++;
     }, 20);
   }
@@ -103,7 +103,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     this.container.html(html);
     
-    firstAlert();
+    nowDetailIntervalEvent();
 
     //如果有需要的话,更新样式
     this.updateStyle();
