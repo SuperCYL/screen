@@ -1,0 +1,78 @@
+{
+  "name": "@hk-componentPackage/leaderDetailBig",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "领导人详情放大版",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "600",
+      "height": "600",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      }
+    },
+    "api_data": {
+      "source": {
+        "irSid": null,
+        "postCode": null,
+        "docpubtime": "2020-06-13 11:28:39",
+        "doctitle": "朱晨丽郑嘉颖#焚身# \r\n朱朱新剧！！！\r\n啊啊啊男神女神都在",
+        "contentBak": null,
+        "irContent": "朱晨丽郑嘉颖#焚身# \r\n朱朱新剧！！！\r\n啊啊啊男神女神都在",
+        "content": "朱晨丽郑嘉颖#焚身# \r\n朱朱新剧！！！\r\n啊啊啊男神女神都在",
+        "zbType": "微博",
+        "puburl": "http://weibo.com/7388523121/J6qsN7VmP",
+        "siteArea": "null",
+        "zbSourceSite": "新浪",
+        "docauthor": "Kowin可汶",
+        "irEmotionalDigit": null,
+        "zbImageUrl": "https://wx4.sinaimg.cn/orj360/00841unLgy1gfqi30hhubj30tz18fn72.jpg",
+        "docchannel": "微博",
+        "irWeibodocid": "4515316971888819",
+        "irWeibouid": "7388523121",
+        "catalogArea": null,
+        "zbFinalArea": null,
+        "entityName": "朱晨丽;郑嘉颖",
+        "entityPlace": "null",
+        "entityOrg": "null",
+        "entityTime": "null",
+        "keywords": "新剧;郑嘉颖;朱晨丽;女神",
+        "emotionalKeywords": "null",
+        "md5tag": "2732deaea70a1c49",
+        "irLoadtime": null,
+        "abstractTag": "朱晨丽郑嘉颖#焚身#朱朱新剧！",
+        "administrativeCode": null
+      }
+    }
+  }
+}
