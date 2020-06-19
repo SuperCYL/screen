@@ -72,9 +72,19 @@ module.exports = Event.extend(function Base(container, config) {
       html += `<li type="${data[i]["type"]}" style="background-image:url('${background}')">
         <p class="tit">
         <img class="icon" src="${icon}" />
-        ${data[i]["typeName"]}</p>
-        <p class="count">${data[i]["accountCount"]}</p>
-      </li>`
+        ${data[i]["typeName"]}</p>`
+        if(data[i]["accountCount"] > 10000){
+          if(data[i]["accountCount"]%10000 == 0){
+            html+= `<p class="count">${(data[i]["accountCount"]/10000)}w</p>`
+          }else{
+            html+= `<p class="count">${(data[i]["accountCount"]/10000).toFixed(2)}w</p>`
+          }
+         
+        }else{
+          html+= `<p class="count">${data[i]["accountCount"]}</p>`
+        }
+        
+        html+= `</li>`
     }
     
     html+=`</ul></div>` 
@@ -103,9 +113,19 @@ module.exports = Event.extend(function Base(container, config) {
       html += `<li type="${data[i]["type"]}" style="background-image:url('${background}')">
         <p class="tit">
         <img class="icon" src="${icon}" />
-        ${data[i]["typeName"]}</p>
-        <p class="count">${data[i]["fansCount"]}</p>
-      </li>`
+        ${data[i]["typeName"]}</p>`
+        if(data[i]["fansCount"]>10000){
+          if(data[i]["fansCount"]%10000 == 0){
+            html += `<p class="count">${(data[i]["fansCount"]/10000)}w</p>`
+          }else{
+            html += `<p class="count">${(data[i]["fansCount"]/10000).toFixed(2)}w</p>`
+          }
+          
+        }else{
+          html += `<p class="count">${data[i]["fansCount"]}</p>`
+        }
+
+        html += `</li>`
     }
     html+=`</ul></div>` 
     html+=`</div>` 
