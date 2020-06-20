@@ -97,7 +97,7 @@ module.exports = Event.extend(function Base(container, config) {
           for(var i = 0;i<data.length;i++){
             if(eventId == data[i]["contentId"]){
               console.log(data[i]["contentId"])
-              that.emit('rollEvent', {item:data[i]});
+              that.emit('shengBigRollEvent', {item:data[i]});
             }
           }
         },
