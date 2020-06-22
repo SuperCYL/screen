@@ -65,7 +65,7 @@ module.exports = Event.extend(function Base(container, config) {
 
     if(data.contentType != 3){
       html+= `<p style="font-size:36px;">${data.title}</p>`
-      html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
+      html+= `<p style="margin:20px 0;"><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       
 
       if(data.content){ //文字
