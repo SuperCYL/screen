@@ -53,7 +53,7 @@ html, body {
     position: absolute;
     top: 37px;
     text-align: left;
-    left: 80px;
+    left: 116px;
     color:#fff;
     opacity: 0.5;
   }
@@ -61,12 +61,12 @@ html, body {
     opacity: 100;
   }
   #shengBigSwiper .swiper-slide .eventSummary{
-    width: 480px;
+    width: 800px;
     font-size: 50px;
     position: absolute;
     bottom: 37px;
     text-align: left;
-    left: 80px;
+    left: 116px;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
@@ -74,8 +74,8 @@ html, body {
   #shengBigSwiper .swiper-slide .eventTime{
     position: absolute;
     font-size: 48px;
-    top: 44px;
-    right: 10px;
+    top: 40px;
+    right: 40px;
     color:#fff;
     opacity: 0.5;
   }
@@ -87,6 +87,6 @@ html, body {
     height:43px;
     position: absolute;
     top:48px;
-    left:10px;
+    left:40px;
     object-fit: cover;
   }

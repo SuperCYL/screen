@@ -51,7 +51,7 @@ module.exports = Event.extend(function Base(container, config) {
         html+=`<div class="swiper-slide" eventId="${data[i]["contentId"]}">`
         html+= `<img class="eventCover" src="${data[i]["icon"]}" />`
 
-        if(data[i]["accountName"].length > 10){
+        if(data[i]["accountName"] && data[i]["accountName"].length > 10){
           html+= `<p class="eventName">${data[i]["accountName"].substr(0,10)}...</p>`
         }else{
           html+= `<p class="eventName">${data[i]["accountName"]}</p>`

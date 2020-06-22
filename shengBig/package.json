@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/shengBig",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -14,8 +14,8 @@
       "regular"
     ],
     "view": {
-      "width": "480",
-      "height": "504",
+      "width": "1047",
+      "height": "955",
       "minWidth": "200",
       "minHeight": "100"
     },
