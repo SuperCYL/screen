@@ -86,7 +86,9 @@ module.exports = Event.extend(function Base(container, config) {
       spaceBetween: 30,
       centeredSlides: true, 
       direction: 'vertical',
-      autoplay: true,
+      autoplay: {
+        delay: 60000,
+      },
       loop: true,
       mousewheel:true,
       slideToClickedSlide:true,
