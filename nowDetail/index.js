@@ -11,15 +11,27 @@ var nowDetailInterval;
 function nowDetailIntervalEvent(){
   if(nowDetailInterval) {
     clearInterval(nowDetailInterval);
-    nowDetailInterval = setInterval(function(){
-      document.getElementById("nowDetailCont").scrollTop++;
-    }, 20);
+    nowDetailIntervalEvent();
+
   }else{
-    nowDetailInterval = setInterval(function(){
-      document.getElementById("nowDetailCont").scrollTop++;
-    }, 20);
+    if(document.getElementById("nowDetailCont").scrollTop == document.getElementById("nowDetailCont").scrollHeight){
+      clearInterval(nowDetailInterval);
+      document.getElementById("nowDetailCont").scrollTop = 0;
+      nowDetailIntervalEvent();
+    }else{
+      nowDetailIntervalEvent();
+    }
+    
   }
 }
+
+function nowDetailIntervalEvent(){
+
+  nowDetailInterval = setInterval(function(){
+    document.getElementById("nowDetailCont").scrollTop++;
+  }, 2);
+}
+
 module.exports = Event.extend(function Base(container, config) {
   this.config = {
     theme: {}

@@ -50,7 +50,11 @@ module.exports = Event.extend(function Base(container, config) {
       for(var i =0;i<data.length;i++){
       
         html+=`<div class="swiper-slide" eventId="${data[i]["eventId"]}">`
-        html+= `<img class="eventCover" src="${data[i]["eventCover"]}" />`
+        if(data[i]["eventCover"] && data[i]["eventCover"]!=""){
+          html+= `<img class="eventCover" src="${data[i]["eventCover"]}" />`
+        }else{
+          html+= `<img class="eventCover" src="https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/important/lingdaokaihui.png" />`
+        }
 
         if(data[i]["eventName"].length > 10){
           html+= `<p class="eventName">${data[i]["eventName"].substr(0,10)}...</p>`
