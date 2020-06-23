@@ -88,6 +88,7 @@ module.exports = Event.extend(function Base(container, config) {
       direction: 'vertical',
       autoplay: {
         delay: 60000,
+        disableOnInteraction:false,
       },
       loop: true,
       mousewheel:true,
