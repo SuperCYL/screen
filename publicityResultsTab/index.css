@@ -32,7 +32,7 @@
     width:34px;
     height:30px;
     position:absolute;
-    left:60px;
+    left:85px;
     top:18px;
 }
 #publicityResultsTab ul li .count{
@@ -43,8 +43,9 @@
 }
 #publicityResultsTab ul li .tit{
     text-align:center;
-    line-height: 67px;
+    height: 67px;
     font-size: 36px;
+    position: relative;
 }
 #publicityResultsTab .account_prt{
     height:300px;
@@ -52,4 +53,9 @@
 #publicityResultsTab .user_prt{
     margin-top:22px;
     height:300px;
+}
+#publicityResultsTab .typeName{
+    position: absolute;
+    left:130px;
+    top:10px;
 }

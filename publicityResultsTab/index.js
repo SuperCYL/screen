@@ -57,11 +57,11 @@ module.exports = Event.extend(function Base(container, config) {
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/affaa2bdc2fe61e28f970daac8af6c30.png"
         background = bg
       }
-      else if(data[i]["type"] === 2){
+      else if(data[i]["type"] === 3){
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/df51dbd3066fb260d32c51f05a9eabcf.png"
         background = hover
       }
-      else if(data[i]["type"] === 3){
+      else if(data[i]["type"] === 2){
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/db315c6cf286d36ae182aadaa1d5d240.png"
         background = hover
       }else{
@@ -70,9 +70,9 @@ module.exports = Event.extend(function Base(container, config) {
       }
 
       html += `<li type="${data[i]["type"]}" style="background-image:url('${background}')">
-        <p class="tit">
+        <div class="tit">
         <img class="icon" src="${icon}" />
-        ${data[i]["typeName"]}</p>`
+        <span class="typeName">${data[i]["typeName"]}</span></div>`
         if(data[i]["accountCount"] > 10000){
           if(data[i]["accountCount"]%10000 == 0){
             html+= `<p class="count">${(data[i]["accountCount"]/10000)}w</p>`
@@ -98,11 +98,11 @@ module.exports = Event.extend(function Base(container, config) {
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/affaa2bdc2fe61e28f970daac8af6c30.png"
         background = bg
       }
-      else if(data[i]["type"] === 2){
+      else if(data[i]["type"] === 3){
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/df51dbd3066fb260d32c51f05a9eabcf.png"
         background = hover
       }
-      else if(data[i]["type"] === 3){
+      else if(data[i]["type"] === 2){
         icon = "http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/db315c6cf286d36ae182aadaa1d5d240.png"
         background = hover
       }else{
@@ -111,9 +111,9 @@ module.exports = Event.extend(function Base(container, config) {
       }
 
       html += `<li type="${data[i]["type"]}" style="background-image:url('${background}')">
-        <p class="tit">
+        <div class="tit">
         <img class="icon" src="${icon}" />
-        ${data[i]["typeName"]}</p>`
+        <span class="typeName">${data[i]["typeName"]}</span></div>`
         if(data[i]["fansCount"]>10000){
           if(data[i]["fansCount"]%10000 == 0){
             html += `<p class="count">${(data[i]["fansCount"]/10000)}w</p>`
