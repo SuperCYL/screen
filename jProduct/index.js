@@ -82,7 +82,8 @@ module.exports = Event.extend(function Base(container, config) {
       // centeredSlides: true, //第一个hover
       direction: 'vertical',
       autoplay: {
-        delay:10000
+        delay:10000,
+        disableOnInteraction:false,
       },
       loop: true,
       mousewheel:true,
