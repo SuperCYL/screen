@@ -13,26 +13,16 @@ var bangdanDetailInterval;
 function bangdanDetailIntervalEvent(){
   if(bangdanDetailInterval) {
     clearInterval(bangdanDetailInterval);
-    bangdanDetailIntervalTimeEvent();
-  }else{
-    bangdanDetailIntervalTimeEvent();
-  }
-}
-
-function bangdanDetailIntervalTimeEvent(){
-
-  bangdanDetailInterval = setInterval(function(){
-    if((document.getElementById("bangdanDetailCont").scrollTop + 900) == document.getElementById("bangdanDetailCont").scrollHeight){
-      clearInterval(bangdanDetailInterval);
-      document.getElementById("bangdanDetailCont").scrollTop = 0;
-      bangdanDetailIntervalEvent();
-    }else{
-      document.getElementById("bangdanDetailCont").scrollTop++;
-    }
     
-  }, 20);
+    bangdanDetailInterval = setInterval(function(){
+      document.getElementById("bangdanDetailCont").scrollTop++;
+    }, 20);
 
-  
+  }else{
+    bangdanDetailInterval = setInterval(function(){
+      document.getElementById("bangdanDetailCont").scrollTop++;
+    }, 20);
+  }
 }
 
 module.exports = Event.extend(function Base(container, config) {
