@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/shengDetail",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
