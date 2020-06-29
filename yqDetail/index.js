@@ -56,7 +56,7 @@ module.exports = Event.extend(function Base(container, config) {
     
     //更新图表
     var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
-    html+=`<p style="font-size:44px;">${data.doctitle}</p>`
+    html+=`<p style="font-size:44px;">${data.doctitle.length>20?data.doctitle.substr(0,20)+"...":data.doctitle}</p>`
     html += `<p style="font-size:28px;line-height:56px;">${data.docpubtime}</p>`
     html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
     html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`

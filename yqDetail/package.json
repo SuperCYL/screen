@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/yqDetail",
-  "version": "0.2.6",
+  "version": "0.2.8",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
