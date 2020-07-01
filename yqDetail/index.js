@@ -50,16 +50,22 @@ module.exports = Event.extend(function Base(container, config) {
     oMeta.content= 'never';
     document.getElementsByTagName('head')[0].appendChild(oMeta);
 
-    let cont = data.irContent.replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
-    cont = cont.replace(/>;/g,'>');
-    cont = escape2Html(cont);
+    var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
+    html+=`<p style="font-size:44px!important;text-indent: 0!important;">${data.doctitle.length>20?data.doctitle.substr(0,20)+"...":data.doctitle}</p>`
+    html += `<p style="font-size:28px!important;line-height:56px;text-indent: 0!important;">${data.docpubtime}</p>`
+    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
+
+    if(data.yqType == "1"){
+      html+= `<div style="font-size:30px;line-height:55px;">${data.irContent}</div>`
+    }else{
+      let cont = data.irContent.replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
+      cont = cont.replace(/>;/g,'>');
+      cont = escape2Html(cont);
+      html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`
+    }
     
     //更新图表
-    var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
-    html+=`<p style="font-size:44px;">${data.doctitle.length>20?data.doctitle.substr(0,20)+"...":data.doctitle}</p>`
-    html += `<p style="font-size:28px;line-height:56px;">${data.docpubtime}</p>`
-    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
-    html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`
+    
     html += `</div>`
     //this.chart.render(data, cfg);
     this.container.html(html)

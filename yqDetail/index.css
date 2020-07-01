@@ -1,3 +1,13 @@
 #yqDetail img{
     margin:20px auto 0!important;
 }
+#yqDetail p{
+    font-size:30px!important;
+    text-indent: 2.2em;
+}
+#yqDetail span{
+    font-size:30px!important;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
