@@ -55,14 +55,14 @@ module.exports = Event.extend(function Base(container, config) {
     html += `<p style="font-size:28px!important;line-height:56px;text-indent: 0!important;">${data.docpubtime}</p>`
     html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
 
-    if(data.yqType == "1"){
-      html+= `<div style="font-size:30px;line-height:55px;">${data.irContent}</div>`
-    }else{
+    // if(data.yqType == "1"){
+    //   html+= `<div style="font-size:30px;line-height:55px;">${data.irContent}</div>`
+    // }else{
       let cont = data.irContent.replace(/\s+\s+/g,'<br/><br/><span style="display:inline-block;width:32px"></span>');
       cont = cont.replace(/>;/g,'>');
       cont = escape2Html(cont);
       html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`
-    }
+    // }
     
     //更新图表
     

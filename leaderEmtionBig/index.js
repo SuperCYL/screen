@@ -43,16 +43,16 @@ module.exports = Event.extend(function Base(container, config) {
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1){
-                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:97px;color:#F74C64">${data[i]["title"]}</a>`
+                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:97px;color:#F74C64">${data[i]["title"]}</span>`
               }
               else if(data[i]["rankId"] == 2){
-                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:88px;color:#FFA633">${data[i]["title"]}</a>` 
+                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:88px;color:#FFA633">${data[i]["title"]}</span>` 
               }
               else if(data[i]["rankId"] == 3){
-                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:73px;color:#F9C824">${data[i]["title"]}</a>` 
+                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:73px;color:#F9C824">${data[i]["title"]}</span>` 
               }
               else{
-                html+=`<a class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" href="#" style="font-size:58px;color:#FFFFFF">${data[i]["title"]}</a>` 
+                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:58px;color:#FFFFFF">${data[i]["title"]}</span>` 
               }
             }
             
