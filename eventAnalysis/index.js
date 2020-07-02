@@ -68,15 +68,15 @@ module.exports = Event.extend(function Base(container, config) {
           html+= `<p class="eventSummary">${data[i]["eventSummary"]}</p>`
         }
         
-        if(data[i]["eventTime"].indexOf('00:00:00') !== -1){
-          html+= `<p class="eventTime">${data[i]["eventTime"].substr(0,10)}</p>`
+        if(data[i]["createTime"].indexOf('00:00:00') !== -1){
+          html+= `<p class="eventTime">${data[i]["createTime"].substr(0,10)}</p>`
         }else{
-          html+= `<p class="eventTime">${data[i]["eventTime"]}</p>`
+          html+= `<p class="eventTime">${data[i]["createTime"]}</p>`
         }
 
         html+= `<div class="hot-div">
         <img class="hot-icon" src="http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/a0a96edce5c10f3c3447a6e2e7cc764f.png">
-        <span class="relatedDepartmentCount">${data[i]["relatedDepartmentCount"]}</span></div>`
+        <span class="relatedDepartmentCount">${data[i]["eventCount"]}</span></div>`
 
         html+=`</div>`
       }
