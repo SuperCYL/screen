@@ -11,6 +11,10 @@
     position: absolute;
     left: 130px;
     top: 200px;
+    /* text-shadow: 0 0 10px #F74C64,
+    0 0 20px #F74C64,
+    0 0 30px #F74C64,
+    0 0 60px #F74C64; */
 }
 #leaderEmotionCloud .b1{
     position: absolute;

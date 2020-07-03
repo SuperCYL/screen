@@ -43,16 +43,16 @@ module.exports = Event.extend(function Base(container, config) {
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1){
-                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:56px;color:#F74C64">${data[i]["title"]}</span>`
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:56px;color:#F74C64">${data[i]["title"]}</span>`
               }
               else if(data[i]["rankId"] == 2){
-                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:52px;color:#FFA633">${data[i]["title"]}</span>` 
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:52px;color:#FFA633">${data[i]["title"]}</span>` 
               }
               else if(data[i]["rankId"] == 3){
-                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:48px;color:#F9C824">${data[i]["title"]}</span>` 
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:48px;color:#F9C824">${data[i]["title"]}</span>` 
               }
               else{
-                html+=`<span class="tagcloudItem b${i}" eventId="${data[i]["eventId"]}" style="font-size:40px;color:#FFFFFF">${data[i]["title"]}</span>` 
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:40px;color:#FFFFFF">${data[i]["title"]}</span>` 
               }
             }
             
@@ -68,10 +68,25 @@ module.exports = Event.extend(function Base(container, config) {
     $("#leaderEmotionCloud .tagcloudItem").click(function(event){
       event.stopPropagation(); 
       console.log($(this).attr("eventId"));
+      console.log($(this).attr("index"));
+      let index = $(this).attr("index");
+
+      if(index == 0){
+        $(this).css("text-shadow","0 0 10px #F74C64,0 0 20px #F74C64,0 0 30px #F74C64,0 0 60px #F74C64");
+      }else if(index == 1){
+        $(this).css("text-shadow","0 0 10px #F9C824,0 0 20px #F9C824,0 0 30px #F9C824,0 0 60px #F9C824");
+      }else if(index == 2){
+        $(this).css("text-shadow","0 0 10px rgb(249, 200, 36),0 0 20px rgb(249, 200, 36),0 0 30px rgb(249, 200, 36),0 0 60px rgb(249, 200, 36)");
+      }else{
+        $(this).css("text-shadow","0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 60px #fff");
+      }
+
+      $(this).siblings("span").css("text-shadow","none");
       that.emit('click', {eventId:$(this).attr("eventId")}); 
     })
     $("#leaderEmotionCloud").click(function(){
       console.log("全部")
+      $(".tagcloudItem").css("text-shadow","none");
       that.emit('click', {eventId:""}); 
     })
     this.updateStyle();
