@@ -9,7 +9,7 @@
 }
 #leaderEmotionCloudBig .b0{
     position: absolute;
-    left: 380px;
+    left: 350px;
     top: 380px;
 }
 #leaderEmotionCloudBig .b1{
@@ -25,7 +25,7 @@
 #leaderEmotionCloudBig .b3{
     position: absolute;
     top: 380px;
-    right: 50px;
+    right: 0;
 }
 #leaderEmotionCloudBig .b4{
     position: absolute;

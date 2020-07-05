@@ -11,10 +11,6 @@
     position: absolute;
     left: 130px;
     top: 200px;
-    /* text-shadow: 0 0 10px #F74C64,
-    0 0 20px #F74C64,
-    0 0 30px #F74C64,
-    0 0 60px #F74C64; */
 }
 #leaderEmotionCloud .b1{
     position: absolute;
@@ -28,12 +24,12 @@
 }
 #leaderEmotionCloud .b3{
     position: absolute;
-    top: 160px;
-    right: 70px;
+    top: 140px;
+    right: 0;
 }
 #leaderEmotionCloud .b4{
     position: absolute;
-    bottom: 115px;
+    bottom: 100px;
     right: 70px;
 }
 #leaderEmotionCloud .b5{
@@ -43,14 +39,14 @@
 }
 #leaderEmotionCloud .b6{
     position: absolute;
-    top: 280px;
-    left: 80px;
+    top: 270px;
+    left: 60px;
     
 }
 #leaderEmotionCloud .b7{
     position: absolute;
     top: 65px;
-    right: 70px;
+    right: 30px;
 }
 #leaderEmotionCloud .b8{
     position: absolute;

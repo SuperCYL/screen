@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/leaderEmtionBig",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
@@ -76,57 +76,57 @@
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":5
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":6
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":7
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":8
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":9
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":10
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":11
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":12
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":13
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":14
         },
         {
           "eventId":"9d91357e5f7e113a70fffad63982d6ec",
           "title":"习近平",
-          "rankId":4
+          "rankId":15
         }
     ]
     }

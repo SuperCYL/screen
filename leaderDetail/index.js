@@ -44,6 +44,7 @@ module.exports = Event.extend(function Base(container, config) {
    */
   render: function (data, config) {
     data = this.data(data);
+    console.log("领导人舆情详情：",data)
     var cfg = this.mergeConfig(config);
     var oMeta = document.createElement('meta');
     oMeta.name= 'referrer';
