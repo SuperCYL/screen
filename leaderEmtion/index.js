@@ -43,10 +43,10 @@ module.exports = Event.extend(function Base(container, config) {
           <div class="tagcloud" style="width:100%;height:100%;">`
             for(var i=0;i<data.length;i++){
               if(data[i]["rankId"] == 1||data[i]["rankId"] == 2 || data[i]["rankId"] == 3 || data[i]["rankId"] == 4 ||data[i]["rankId"] == 5){
-                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:56px;color:#F74C64">${data[i]["title"]}</span>`
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:55px;color:#F74C64">${data[i]["title"]}</span>`
               }
               else if(data[i]["rankId"] == 6 || data[i]["rankId"] == 7 || data[i]["rankId"] == 8){
-                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:52px;color:#FFA633">${data[i]["title"]}</span>` 
+                html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:49px;color:#FFA633">${data[i]["title"]}</span>` 
               }
               // else if(data[i]["rankId"] == 3){
               //   html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:48px;color:#F9C824">${data[i]["title"]}</span>` 
@@ -71,13 +71,15 @@ module.exports = Event.extend(function Base(container, config) {
       console.log($(this).attr("index"));
       let index = $(this).attr("index");
 
-      if(index == 0){
+      if(index == 0||index == 1 || index == 2 || index == 3 ||index == 4){
         $(this).css("text-shadow","0 0 10px #F74C64,0 0 20px #F74C64,0 0 30px #F74C64,0 0 60px #F74C64");
-      }else if(index == 1 ||index == 2 || index == 3){
+      }else if(index == 5 || index == 6 || index == 7){
         $(this).css("text-shadow","0 0 10px #F9C824,0 0 20px #F9C824,0 0 30px #F9C824,0 0 60px #F9C824");
-      }else if(index == 2){
-        $(this).css("text-shadow","0 0 10px rgb(249, 200, 36),0 0 20px rgb(249, 200, 36),0 0 30px rgb(249, 200, 36),0 0 60px rgb(249, 200, 36)");
-      }else{
+      }
+      // else if(index == 2){
+      //   $(this).css("text-shadow","0 0 10px rgb(249, 200, 36),0 0 20px rgb(249, 200, 36),0 0 30px rgb(249, 200, 36),0 0 60px rgb(249, 200, 36)");
+      // }
+      else{
         $(this).css("text-shadow","0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 60px #fff");
       }
 

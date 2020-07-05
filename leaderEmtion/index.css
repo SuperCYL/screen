@@ -29,8 +29,8 @@
 }
 #leaderEmotionCloud .b4{
     position: absolute;
-    bottom: 100px;
-    right: 70px;
+    top: 270px;
+    left: 60px;
 }
 #leaderEmotionCloud .b5{
     position: absolute;
@@ -39,9 +39,8 @@
 }
 #leaderEmotionCloud .b6{
     position: absolute;
-    top: 270px;
-    left: 60px;
-    
+    bottom: 100px;
+    right: 70px;
 }
 #leaderEmotionCloud .b7{
     position: absolute;
