@@ -9,8 +9,8 @@
 }
 #leaderEmotionCloudBig .b0{
     position: absolute;
-    left: 350px;
-    top: 420px;
+    top: 210px;
+    right: 150px;
 }
 #leaderEmotionCloudBig .b1{
     position: absolute;
@@ -19,50 +19,48 @@
 }
 #leaderEmotionCloudBig .b2{
     position: absolute;
-    bottom: 300px;
+    top: 360px;
     right: 70px;
 }
 #leaderEmotionCloudBig .b3{
     position: absolute;
-    top: 290px;
-    right: 0;
+    left: 80px;
+    top: 420px;
 }
 #leaderEmotionCloudBig .b4{
     position: absolute;
     top: 520px;
-    left: 160px;
+    right: 160px;
 }
 #leaderEmotionCloudBig .b5{
     position: absolute;
     top: 175px;
-    left: 280px;
+    left: 100px;
 }
 #leaderEmotionCloudBig .b6{
     position: absolute;
-    bottom: 200px;
-    right: 200px;
-    
-    
+    bottom: 300px;
+    left: 200px;
 }
 #leaderEmotionCloudBig .b7{
     position: absolute;
-    top: 180px;
+    top: 100px;
     right: 80px;
 }
 #leaderEmotionCloudBig .b8{
     position: absolute;
     bottom: 200px;
-    left: 100px;
+    left: 180px;
 }
 #leaderEmotionCloudBig .b9{
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 90px;
 }
 #leaderEmotionCloudBig .b10{
     position: absolute;
-    bottom: 140px;
-    right: 390px;
+    bottom: 190px;
+    right: 300px;
 }
 #leaderEmotionCloudBig .b11{
     position: absolute;
