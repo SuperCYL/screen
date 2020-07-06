@@ -75,7 +75,7 @@ module.exports = Event.extend(function Base(container, config) {
 
       if(index == 0||index == 1 || index == 2 || index == 3 ||index == 4){
         $(this).css("text-shadow","0 0 10px #F74C64,0 0 20px #F74C64,0 0 30px #F74C64,0 0 60px #F74C64");
-      }else if(iindex == 5 || index == 6 || index == 7){
+      }else if(index == 5 || index == 6 || index == 7){
         $(this).css("text-shadow","0 0 10px #F9C824,0 0 20px #F9C824,0 0 30px #F9C824,0 0 60px #F9C824");
       }
       // else if(index == 2){
