@@ -13,12 +13,12 @@ function shengDetailIntervalEvent(){
   if(shengDetailInterval) {
     clearInterval(shengDetailInterval);
     shengDetailInterval = setInterval(function(){
-      document.getElementById("shengDetailCont").scrollTop++;
-    }, 20);
+      document.getElementById("shengDetailCont").scrollTop=document.getElementById("shengDetailCont").scrollTop+3;
+    }, 60);
   }else{
     shengDetailInterval = setInterval(function(){
-      document.getElementById("shengDetailCont").scrollTop++;
-    }, 20);
+      document.getElementById("shengDetailCont").scrollTop=document.getElementById("shengDetailCont").scrollTop+3;
+    }, 60);
   }
 }
 
@@ -65,14 +65,14 @@ module.exports = Event.extend(function Base(container, config) {
     var html = `<div id="shengDetailCont">`
 
     if(data.contentType != 3){
-      html+= `<p style="font-size:36px;margin:0;">${data.title}</p>`
+      html+= `<p style="font-size:40px;margin:0;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       
 
       if(data.content){ //文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:30px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
         }
         
       }
