@@ -13,12 +13,12 @@ function shengDetailIntervalEvent(){
   if(shengDetailInterval) {
     clearInterval(shengDetailInterval);
     shengDetailInterval = setInterval(function(){
-      document.getElementById("shengDetailBigCont").scrollTop++;
-    }, 20);
+      document.getElementById("shengDetailBigCont").scrollTop=document.getElementById("shengDetailBigCont").scrollTop+3;
+    }, 60);
   }else{
     shengDetailInterval = setInterval(function(){
-      document.getElementById("shengDetailBigCont").scrollTop++;
-    }, 20);
+      document.getElementById("shengDetailBigCont").scrollTop=document.getElementById("shengDetailBigCont").scrollTop+3;
+    }, 60);
   }
 }
 
@@ -72,7 +72,7 @@ module.exports = Event.extend(function Base(container, config) {
       if(data.content){ //文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:44px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:44px;line-height:80px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
         }
         
       }
@@ -89,7 +89,7 @@ module.exports = Event.extend(function Base(container, config) {
       if(data.photoUrls && data.content){ //图片和文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:44px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:44px;line-height:80px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
           if(img[i]){
             html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
           }
