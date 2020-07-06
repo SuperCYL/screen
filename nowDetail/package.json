@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/nowDetail",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",

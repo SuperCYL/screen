@@ -92,7 +92,7 @@ module.exports = Event.extend(function Base(container, config) {
       if(data.photoUrls && data.content){ //图片和文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:24px;line-height:40px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:36px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
           if(img[i]){
             html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
           }
