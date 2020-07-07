@@ -74,15 +74,15 @@ module.exports = Event.extend(function Base(container, config) {
       let index = $(this).attr("index");
 
       if(index == 0||index == 1 || index == 2 || index == 3 ||index == 4){
-        $(this).css("text-shadow","0 0 10px #F74C64,0 0 20px #F74C64,0 0 30px #F74C64,0 0 60px #F74C64");
+        $(this).css("text-shadow","0 0 10px #ff4e00,0 0 20px #ff4e00,0 0 30px #ff4e00,0 0 60px #ff4e00");
       }else if(index == 5 || index == 6 || index == 7){
-        $(this).css("text-shadow","0 0 10px #21F0F3,0 0 20px #21F0F3,0 0 30px #21F0F3,0 0 60px #21F0F3");
+        $(this).css("text-shadow","0 0 10px #ff4e00,0 0 20px #ff4e00,0 0 30px #ff4e00,0 0 60px #ff4e00");
       }
       // else if(index == 2){
       //   $(this).css("text-shadow","0 0 10px rgb(249, 200, 36),0 0 20px rgb(249, 200, 36),0 0 30px rgb(249, 200, 36),0 0 60px rgb(249, 200, 36)");
       // }
       else{
-        $(this).css("text-shadow","0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 60px #fff");
+        $(this).css("text-shadow","0 0 10px #00baff,0 0 20px #00baff,0 0 30px #00baff,0 0 60px #00baff");
       }
 
       $(this).siblings("span").css("text-shadow","none");
