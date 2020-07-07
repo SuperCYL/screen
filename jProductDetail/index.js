@@ -65,14 +65,14 @@ module.exports = Event.extend(function Base(container, config) {
     var html = `<div id="jProductDetailCont">`
 
     if(data.contentType != 3){
-      html+= `<p style="font-size:40px;margin:0;">${data.title}</p>`
+      html+= `<p style="font-size:30px;margin:0;">${data.title}</p>`
       html+= `<p><span>${data.author}</span><span style="margin-left:30px;">${data.releaseTime.substr(5, 11)}</span></p>`
       
 
       if(data.content){ //文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:30px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:28px;line-height:50px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
         }
         
       }
@@ -89,7 +89,7 @@ module.exports = Event.extend(function Base(container, config) {
       if(data.photoUrls && data.content){ //图片和文字
 
         for(var i =0;i<textC.length;i++){
-          html+=`<p style="text-indent: 2.2em;font-size:30px;line-height:60px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
+          html+=`<p style="text-indent: 2.2em;font-size:28px;line-height:50px;letter-spacing:4px;margin-bottom:10px;">${textC[i]}</p>`
           if(img[i]){
             html+= `<img style="width:100%;height:300px;" src="${img[i]}" />`
           }
