@@ -1,5 +1,5 @@
 {
-  "name": "@namespace/eventAnalysisBig",
+  "name": "@hk-componentPackage/eventAnalysisBig",
   "version": "0.0.1",
   "dependencies": {
     "bcore": "0.0.18",
