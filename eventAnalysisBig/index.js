@@ -2,7 +2,9 @@ var Event = require('bcore/event');
 var $ = require('jquery');
 var _ = require('lodash');
 //var Chart = require('XXX');
-
+require('./swiper.min.css');
+require('./index.css');
+var Swiper = require('./swiper');
 /**
  * 马良基础类
  */
@@ -38,10 +40,79 @@ module.exports = Event.extend(function Base(container, config) {
   render: function (data, config) {
     data = this.data(data);
     var cfg = this.mergeConfig(config);
+    //如果有需要的话,更新样式
+    let that = this;
+    var html = `<div id="eventAnalysisBigSwiper" style="height:100%;"><div class="swiper-container"><div class="swiper-wrapper">`
+      for(var i =0;i<data.length;i++){
+      
+        html+=`<div class="swiper-slide" eventId="${data[i]["eventId"]}">`
+        if(data[i]["eventCover"] && data[i]["eventCover"]!=""){
+          html+= `<img class="eventCover" src="${data[i]["eventCover"]}" />`
+        }else{
+          html+= `<img class="eventCover" src="https://ymr-test.oss-cn-hangzhou.aliyuncs.com/html/important/lingdaokaihui.png" />`
+        }
+
+        if(data[i]["eventName"].length > 10){
+          html+= `<p class="eventName">${data[i]["eventName"].substr(0,10)}...</p>`
+        }else{
+          html+= `<p class="eventName">${data[i]["eventName"]}</p>`
+        }
+        
+        if(data[i]["eventSummary"].length >55 ){
+          html+= `<p class="eventSummary">${data[i]["eventSummary"].substr(0,55)}...</p>`
+        }else{
+          html+= `<p class="eventSummary">${data[i]["eventSummary"]}</p>`
+        }
+        
+        if(data[i]["createTime"].indexOf('00:00:00') !== -1){
+          html+= `<p class="eventTime">${data[i]["createTime"].substr(0,10)}</p>`
+        }else{
+          html+= `<p class="eventTime">${data[i]["createTime"]}</p>`
+        }
+
+        html+= `<div class="hot-div">
+        <img class="hot-icon" src="http://datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/a0a96edce5c10f3c3447a6e2e7cc764f.png">
+        <span class="relatedDepartmentCount">${data[i]["eventCount"]}</span></div>`
+
+        html+=`</div>`
+      }
+    html+= `</div></div></div>`
+       
+
+    this.container.html(html);
+
+    new Swiper('#eventAnalysisBigSwiper .swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true, 
+      direction: 'vertical',
+      autoplay: {
+        delay: 60000,
+        disableOnInteraction:false,
+      },
+      loop: true,
+      mousewheel:true,
+      slideToClickedSlide:true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      on:{
+        slideChangeTransitionStart: function(){
+          var eventId = $("#eventAnalysisBigSwiper .swiper-slide-active").attr("eventId");
+          for(var i = 0;i<data.length;i++){
+            if(eventId == data[i]["eventId"]){
+              console.log(eventId)
+              that.emit('rollEvent', {item:data[i]});
+            }
+          }
+        },
+      },
+    });
+
+   
     //更新图表
     //this.chart.render(data, cfg);
-    this.container.html(data[0].value)
-    //如果有需要的话,更新样式
     this.updateStyle();
   },
   /**
