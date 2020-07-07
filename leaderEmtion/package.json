@@ -1,6 +1,6 @@
 {
   "name": "@hk-componentPackage/leaderEmotion",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "dependencies": {
     "bcore": "0.0.18",
     "jquery": "2.1.4",
