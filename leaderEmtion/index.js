@@ -77,7 +77,7 @@ module.exports = Event.extend(function Base(container, config) {
       if(index == 0||index == 1 || index == 2 || index == 3 ||index == 4){
         $(this).css("text-shadow","0 0 10px #F74C64,0 0 20px #F74C64,0 0 30px #F74C64,0 0 60px #F74C64");
       }else if(index == 5 || index == 6 || index == 7){
-        $(this).css("text-shadow","0 0 10px #F9C824,0 0 20px #F9C824,0 0 30px #F9C824,0 0 60px #F9C824");
+        $(this).css("text-shadow","0 0 10px #21F0F3,0 0 20px #21F0F3,0 0 30px #21F0F3,0 0 60px #21F0F3");
       }
       // else if(index == 2){
       //   $(this).css("text-shadow","0 0 10px rgb(249, 200, 36),0 0 20px rgb(249, 200, 36),0 0 30px rgb(249, 200, 36),0 0 60px rgb(249, 200, 36)");

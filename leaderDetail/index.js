@@ -57,8 +57,8 @@ module.exports = Event.extend(function Base(container, config) {
     // cont = cont.replace(/(\s|&nbsp;)+/g,'<br />')
     //更新图表
     var html = `<div id="yqDetail" style="width:100%;height:100%;overflow:auto">`
-    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;">${data["abstractTag"]}</p>`
-    html+= `<div style="font-size:30px;line-height:55px;">${cont}</div>`
+    html+= `<p style="letter-spacing: 2px;text-indent: 2.2em;font-size:30px;line-height:50px;">${data["abstractTag"]}</p>`
+    html+= `<div style="font-size:30px;line-height:50px;">${cont}</div>`
     html += `</div>`
     //this.chart.render(data, cfg);
     this.container.html(html)
