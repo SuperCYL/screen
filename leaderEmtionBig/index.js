@@ -45,10 +45,10 @@ module.exports = Event.extend(function Base(container, config) {
               if(data[i]["rankId"] == 1){
                 html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:97px;color:#FFA633">${data[i]["title"]}</span>`
               }
-              else if(data[i]["rankId"] == 2 || data[i]["rankId"] == 3 || data[i]["rankId"] == 4 ||data[i]["rankId"] == 5){
+              else if(data[i]["rankId"] == 2 || data[i]["rankId"] == 3 || data[i]["rankId"] == 4){
                 html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:90px;color:#FFA633">${data[i]["title"]}</span>`
               }
-              else if(data[i]["rankId"] == 6 || data[i]["rankId"] == 7 || data[i]["rankId"] == 8){
+              else if(data[i]["rankId"] == 5 || data[i]["rankId"] == 6 || data[i]["rankId"] == 7 || data[i]["rankId"] == 8){
                 html+=`<span class="tagcloudItem b${i}" index="${i}" eventId="${data[i]["eventId"]}" style="font-size:80px;color:#21F0F3">${data[i]["title"]}</span>` 
               }
               // else if(data[i]["rankId"] == 3){
@@ -73,9 +73,9 @@ module.exports = Event.extend(function Base(container, config) {
       console.log($(this).attr("eventId"));
       let index = $(this).attr("index");
 
-      if(index == 0||index == 1 || index == 2 || index == 3 ||index == 4){
+      if(index == 0||index == 1 || index == 2 || index == 3){
         $(this).css("text-shadow","0 0 10px #ff4e00,0 0 20px #ff4e00,0 0 30px #ff4e00,0 0 60px #ff4e00");
-      }else if(index == 5 || index == 6 || index == 7){
+      }else if(index == 4 || index == 5 || index == 6 || index == 7){
         $(this).css("text-shadow","0 0 10px #ff4e00,0 0 20px #ff4e00,0 0 30px #ff4e00,0 0 60px #ff4e00");
       }
       // else if(index == 2){
